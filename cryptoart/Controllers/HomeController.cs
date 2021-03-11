@@ -25,7 +25,7 @@ namespace cryptoart.Controllers
             return View();
         }
 
-
+        [userFilter]
         public IActionResult Index()
         {
             return View();

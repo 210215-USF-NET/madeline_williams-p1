@@ -25,10 +25,53 @@
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Artist" asp-action="Artists">Artists</a>
                         </li>
+                        @if (Context.Session.GetString("user") == "seller")
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Artist" asp-action="Artists">Create Auction</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Artist" asp-action="Artists">Withdraw Auction</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Artist" asp-action="Artists">View Inventory</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Artist" asp-action="Artists">View Auctions</a>
+                            </li>
+                        }
+                        @if (Context.Session.GetString("user") == "collector")
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Artist" asp-action="Artists">View Collection</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Artist" asp-action="Artists">View Bids</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Artist" asp-action="Artists">View Auctions</a>
+                            </li>
+                        }
+                        @if (Context.Session.GetString("user") == "artist")
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Artist" asp-action="Artists">View Gellery</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Artist" asp-action="Artists">Attach To Seller</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Artist" asp-action="Artists">Submit Art</a>
+                            </li>
+                        }
                     </ul>
                 </div>
-            </div>
-        </nav>
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between float-right">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-link float-right" asp-area="" asp-controller="login" asp-action="login">LOGIN</li>
+                    </ul>
+                </div>
+</nav>
     </header>
     <div class="container">
         <main role="main" class="pb-3">

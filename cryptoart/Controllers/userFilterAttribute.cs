@@ -13,12 +13,13 @@ namespace cryptoart.Controllers
             var ses = context.HttpContext.Session;
             if (ses.GetString("user") == null)
             {
-                ses.SetString("user", "collector");
+                 ses.SetString("user", "collector");
+                //ses.SetString("user", "browser");
+                //ses.SetString("user", "seller");
+                //ses.SetString("user", "artist");
 
             }
 
-
-            // throw new NotImplementedException();
         }
     }
 }
