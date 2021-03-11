@@ -1,0 +1,50 @@
+﻿
+
+
+@{
+    @model ArtModel.ArtistIndexVm;
+}
+<div class="text-center">
+    <h1 class="display-4">Artists</h1>
+    <p>Here are a list of our artists.</p>
+</div>
+
+
+
+@{
+    ViewData["Title"] = "Artists";
+}
+
+<h2>Index</h2>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Name)
+            </th>
+          
+            <th>
+                @Html.DisplayNameFor(model => model.ArtistStatement)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+       
+        <tr>
+
+            <td>
+                @Html.DisplayFor(model => model.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.ArtistStatement)
+            </td>
+
+        </tr>
+       
+    </tbody>
+</table>

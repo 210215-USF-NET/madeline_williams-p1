@@ -1,0 +1,53 @@
+﻿
+
+
+@{
+    @model List<ArtModel.Art>;
+}
+<div class="text-center">
+    <h1 class="display-4">Art</h1>
+    <p>Here is a list of our art.</p>
+</div>
+
+
+
+@{
+    ViewData["Title"] = "Art";
+}
+
+<h2>Index</h2>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+              
+            </th>
+          
+            <th>
+               
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+
+                <td>
+                    @Html.DisplayFor(modelItem => item.Name)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Thumbnail)
+                </td>
+                <td>
+                   $ @Html.DisplayFor(modelItem => item.CurrentValue)
+                </td>
+            </tr>
+        }
+        </tbody>
+</table>

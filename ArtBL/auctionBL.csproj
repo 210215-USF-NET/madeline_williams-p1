@@ -10,4 +10,9 @@
     <PackageReference Include="Serilog.Sinks.File" Version="4.1.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\ArtDL\ArtDL.csproj" />
+    <ProjectReference Include="..\ArtModel\ArtModel.csproj" />
+  </ItemGroup>
+
 </Project>

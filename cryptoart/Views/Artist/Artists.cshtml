@@ -1,0 +1,55 @@
+﻿
+
+
+@{
+    @model List<ArtModel.Artist>;
+}
+<div class="text-center">
+    <h1 class="display-4">Artists</h1>
+    <p>Here are a list of our artists.</p>
+</div>
+
+
+
+@{
+    ViewData["Title"] = "Artists";
+}
+
+<h2>Index</h2>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+              Artist Name
+            </th>
+          
+            <th>
+               Arstist Statement
+            </th>
+            <th>
+
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+
+                <td>
+                    @Html.DisplayFor(modelItem => item.Name)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ArtistStatement)
+                </td>
+                <td>
+                    @Html.ActionLink("Gallery", "Gallery","Art", new { id = item.Id }) |
+                </td>
+            </tr>
+        }
+        </tbody>
+</table>

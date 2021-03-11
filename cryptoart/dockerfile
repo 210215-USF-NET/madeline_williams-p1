@@ -1,0 +1,18 @@
+FROM mcr.microsoft.com/dotnet/sdk:5.0 as build
+WORKDIR D:/app
+COPY *.sln ./
+COPY ../cryptoart/*.sln cryptoart/
+COPY ../ArtModel/*.csproj ArtModel/
+COPY ../ArtDL/*.csproj ArtDL/
+COPY ../ArtBL/*.csproj ArtBL/
+
+RUN dotnet restore
+COPY . ./
+
+RUN dotnet publish cryptoart -c Release -o publish --no-restore
+FROM mcr.microsoft.com/dotnet/aspnet:5.0 as runtime
+WORKDIR D:/app
+#from the earlier build, get the publish folder
+COPY --from=build /app/publish ./
+CMD ["dotnet","cryptoart.dll"]
+

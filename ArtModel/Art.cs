@@ -22,10 +22,11 @@ namespace ArtModel
         public string Name { get { return name; } set { name = value; } }
         public string Description { get { return description; } set { description = value; } }
         public string ArtistCommentary { get { return artiststatement; } set { artiststatement = value; } }
-        string Thumbnail { get; set; }
-        Byte[] Fullart { get; set; }
-        int MaxSeries { get; set; }
+        public string Thumbnail { get; set; }
+        public Byte[] Fullart { get; set; }
+        public int MaxSeries { get; set; }
         public decimal CurrentValue { get { return currentValue; } set { currentValue = value; } }
+        public int ArtistId { get; set; }
         public override string ToString()
         {
             string s = $"Art:\nId={Id}\nname={Name}\ndescription={Description}\nartistv statement={ArtistCommentary}\ncurrent value={CurrentValue}\n";

@@ -18,6 +18,14 @@ namespace cryptoart.Controllers
             _logger = logger;
         }
 
+
+        public IActionResult Artists()
+        {
+           
+            return View();
+        }
+
+
         public IActionResult Index()
         {
             return View();

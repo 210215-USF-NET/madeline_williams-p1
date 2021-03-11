@@ -10,7 +10,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-
+using auctionBL;
 namespace cryptoart
 {
     public class Startup
@@ -25,8 +25,15 @@ namespace cryptoart
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddSession();
             services.AddControllersWithViews();
             services.AddDbContext<ArtDBContext>(options=>options.UseNpgsql(Configuration.GetConnectionString("ArtDB")));
+            services.AddScoped<IArtistRepo,ArtistRepo>();
+            services.AddScoped<IArtistBl, ArtistBl>();
+            services.AddScoped<IArtRepo, ArtRepo>();
+            services.AddScoped<IArtBl, ArtBl>();
+            services.AddScoped<ArtModel.IArtistmapper, ArtModel.ArtistMapper>();
+            services.AddScoped<ArtModel.IArtmapper, ArtModel.ArtMapper>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -44,7 +51,7 @@ namespace cryptoart
             }
             app.UseHttpsRedirection();
             app.UseStaticFiles();
-
+            app.UseSession();
             app.UseRouting();
 
             app.UseAuthorization();

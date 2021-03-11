@@ -2,7 +2,6 @@
 
 namespace ArtModel
 {
- 
     public class SellerInventory : ISellerInventory
     {
         public int SellerId { get; set; }
