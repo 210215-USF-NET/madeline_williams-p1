@@ -32,3 +32,10 @@ steps:
   inputs:
     platform: '$(buildPlatform)'
     configuration: '$(buildConfiguration)'
+- task: AzureRmWebAppDeployment@4
+  inputs:
+    ConnectionType: 'AzureRM'
+    azureSubscription: 'Azure subscription 1(b3b59ade-b510-430f-b880-a7017e1395f8)'
+    appType: 'webApp'
+    WebAppName: 'cryptoart20210310221023'
+    packageForLinux: '$(System.DefaultWorkingDirectory)/**/*.zip'
