@@ -3,21 +3,21 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc.Filters;
 namespace cryptoart.Controllers
 {
-    internal class userFilterAttribute : Attribute
+    internal class userFilterAttribute : ActionFilterAttribute
     {
-        public void OnActionExecuted(ActionExecutedContext context)
+   
+
+        public override void OnActionExecuting(ActionExecutingContext context)
         {
 
             var ses = context.HttpContext.Session;
-            if (ses.GetString("user") == "")
+            if (ses.GetString("user") == null)
             {
                 ses.SetString("user", "collector");
+
             }
 
-        }
 
-        public void OnActionExecuting(ActionExecutingContext context)
-        {
             // throw new NotImplementedException();
         }
     }
