@@ -43,7 +43,7 @@ namespace cryptoart.Controllers
         [userFilter]
         public ActionResult Gallery(int id)
         {
-           // SessionExtensions.SetString(this.HttpContext.Session,"user", "collector");
+            SessionExtensions.SetString(this.HttpContext.Session,"user", "collector");
             return View(_bl.GetArtByArtist(id).ToList());
 
         }
