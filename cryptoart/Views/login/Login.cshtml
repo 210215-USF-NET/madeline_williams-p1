@@ -2,35 +2,48 @@
 
 
 @{
-    @model List<ArtModel.Artist>;
-}
+    @Model 
+    }
 <div class="text-center">
-    <h1 class="display-4">Artists</h1>
-    <p>Here are a list of our artists.</p>
+    <h1 class="display-4">Login To Start a bidding War!</h1>
+    <p>Visual splendors await!</p>
 </div>
 
 
 
 @{
-    ViewData["Title"] = "Artists";
+    ViewData["Title"] = "Login";
 }
 
-<h2>Index</h2>
+<h2>Please Login</h2>
 
 <p>
     <!--a asp-action="Login">Create New</!--a-->
 </p>
+<table>
+    <thead>
+        <th>Enter Your Id Or Name</th>
+        <th>Select Your User Role</th>
+       
+        </thead>
+        <tbody>
+            <tr>
+                @using (Html.BeginForm("perform", "Login", FormMethod.Post))
+                {
+
+<td>
+                <input type="text" id="IdOrName" name="IdOrName" value='@ViewData["IdOrName"]' />
+            </td>
+            <td>
+
+                @Html.DropDownList("ListItem")
+            </td>
+            <td>
+                <input type="submit" />
+            </td>
+            }
+    </tr>
+        </tbody>
+</table>
 
    
-        <form method="post" action="/Login">
-        <input type="text" id="IdOrName" name="IdOrName" value='@ViewData["IdOrName"]' />
-        <select id="userRole">
-            <option value="artist" >artist</option>
-            <option value="collector">collector</option>
-            <option value="seller">seller</option>
-            <option value="browser">browser</option>
-        </select>
-            <input type="submit"/>
-            </form>
-       
-
