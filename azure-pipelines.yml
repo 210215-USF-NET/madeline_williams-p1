@@ -20,7 +20,13 @@ steps:
 - task: NuGetCommand@2
   inputs:
     restoreSolution: '$(solution)'
-
+- task: SonarCloudPrepare@1
+  inputs:
+    SonarCloud: 'mads'
+    organization: '210215-usf-net'
+    scannerMode: 'MSBuild'
+    projectKey: '210215-USF-NET_madeline_williams-p1'
+    projectName: 'madeline_williams-p1'
 - task: VSBuild@1
   inputs:
     solution: '$(solution)'
@@ -33,6 +39,12 @@ steps:
     platform: '$(buildPlatform)'
     configuration: '$(buildConfiguration)'
 
+- task: PublishTestResults@2
+  inputs:
+    testResultsFormat: 'XUnit'
+    testResultsFiles: '**/TEST-*.xml'
+- task: SonarCloudAnalyze@1
+ 
 - task: DotNetCoreCLI@2
   inputs:
         command: 'publish'
