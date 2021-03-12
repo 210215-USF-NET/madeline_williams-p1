@@ -3,13 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31025.194
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "cryptoart", "cryptoart.csproj", "{6A44B900-5B98-46B2-8644-83E61C054776}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "cryptoart", "cryptoart.csproj", "{6A44B900-5B98-46B2-8644-83E61C054776}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArtModel", "..\ArtModel\ArtModel.csproj", "{9CC2594E-5686-4D55-8FF6-73B6F12EE65B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ArtModel", "..\ArtModel\ArtModel.csproj", "{9CC2594E-5686-4D55-8FF6-73B6F12EE65B}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "auctionBL", "..\ArtBL\auctionBL.csproj", "{82A92BB0-B0F3-4E70-84DE-87AD942421B4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArtDL", "..\ArtDL\ArtDL.csproj", "{C9F00C83-FF1C-4DCE-9A55-3B42924A80E1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ArtDL", "..\ArtDL\ArtDL.csproj", "{C9F00C83-FF1C-4DCE-9A55-3B42924A80E1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test", "..\Test\Test.csproj", "{D8D1C106-A191-4CBE-826E-806D086DF211}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{C9F00C83-FF1C-4DCE-9A55-3B42924A80E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C9F00C83-FF1C-4DCE-9A55-3B42924A80E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C9F00C83-FF1C-4DCE-9A55-3B42924A80E1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D8D1C106-A191-4CBE-826E-806D086DF211}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D8D1C106-A191-4CBE-826E-806D086DF211}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D8D1C106-A191-4CBE-826E-806D086DF211}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D8D1C106-A191-4CBE-826E-806D086DF211}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -11,7 +11,7 @@ namespace auctionBL
 {
    public class ArtistBl :IArtistBl
     {
-        private IArtistRepo _repo;
+        private readonly IArtistRepo _repo;
         public ArtistBl(IArtistRepo repo)
         {
             _repo = repo;

@@ -18,38 +18,19 @@
 <h2>Index</h2>
 
 <p>
-    <a asp-action="Create">Create New</a>
+    <!--a asp-action="Login">Create New</!--a-->
 </p>
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-              Artist Name
-            </th>
-          
-            <th>
-               Arstist Statement
-            </th>
-            <th>
 
-            </th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var item in Model)
-        {
-            <tr>
+   
+        <form method="post" action="/Login">
+        <input type="text" id="IdOrName" name="IdOrName" value='@ViewData["IdOrName"]' />
+        <select id="userRole">
+            <option value="artist" >artist</option>
+            <option value="collector">collector</option>
+            <option value="seller">seller</option>
+            <option value="browser">browser</option>
+        </select>
+            <input type="submit"/>
+            </form>
+       
 
-                <td>
-                    @Html.DisplayFor(modelItem => item.Name)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.ArtistStatement)
-                </td>
-                <td>
-                    @Html.ActionLink("Gallery", "Gallery","Art", new { id = item.Id }) |
-                </td>
-            </tr>
-        }
-        </tbody>
-</table>
