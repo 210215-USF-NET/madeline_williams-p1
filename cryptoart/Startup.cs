@@ -10,7 +10,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using auctionBL;
+using bl=auctionBL;
 namespace cryptoart
 {
     public class Startup
@@ -29,9 +29,10 @@ namespace cryptoart
             services.AddControllersWithViews();
             services.AddDbContext<ArtDBContext>(options=>options.UseNpgsql(Configuration.GetConnectionString("ArtDB")));
             services.AddScoped<IArtistRepo,ArtistRepo>();
-            services.AddScoped<IArtistBl, ArtistBl>();
+            services.AddScoped<bl.IArtistBl, bl.ArtistBl>();
             services.AddScoped<IArtRepo, ArtRepo>();
-            services.AddScoped<IArtBl, ArtBl>();
+            services.AddScoped<bl.IArtBl, bl.ArtBl>();
+            services.AddScoped<bl.ILogin, bl.Login>();
             services.AddScoped<ArtModel.IArtistmapper, ArtModel.ArtistMapper>();
             services.AddScoped<ArtModel.IArtmapper, ArtModel.ArtMapper>();
         }

@@ -10,5 +10,6 @@ namespace ArtDL
     public interface IArtistRepo
     {
         public List<Artist> GetAll();
+        public Artist Save(Artist artist);
     }
 }

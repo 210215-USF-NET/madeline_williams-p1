@@ -25,7 +25,7 @@
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Artist" asp-action="Artists">Artists</a>
                         </li>
-                        @if (Context.Session.GetString("user") == "seller")
+                        @if (Context.Session.GetString("user") == "seller"&& ViewContext.RouteData.Values["controller"].ToString()!="Login")
                         {
                             <li class="nav-item">
                                 <a class="nav-link text-dark" asp-area="" asp-controller="Artist" asp-action="Artists">Create Auction</a>
@@ -40,7 +40,7 @@
                                 <a class="nav-link text-dark" asp-area="" asp-controller="Artist" asp-action="Artists">View Auctions</a>
                             </li>
                         }
-                        @if (Context.Session.GetString("user") == "collector")
+                        @if (Context.Session.GetString("user") == "collector" && ViewContext.RouteData.Values["controller"].ToString() != "Login")
                         {
                             <li class="nav-item">
                                 <a class="nav-link text-dark" asp-area="" asp-controller="Artist" asp-action="Artists">View Collection</a>
@@ -52,7 +52,7 @@
                                 <a class="nav-link text-dark" asp-area="" asp-controller="Artist" asp-action="Artists">View Auctions</a>
                             </li>
                         }
-                        @if (Context.Session.GetString("user") == "artist")
+                        @if (Context.Session.GetString("user") == "artist" && ViewContext.RouteData.Values["controller"].ToString() != "Login")
                         {
                             <li class="nav-item">
                                 <a class="nav-link text-dark" asp-area="" asp-controller="Artist" asp-action="Artists">View Gellery</a>

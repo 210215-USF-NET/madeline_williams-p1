@@ -1,0 +1,37 @@
+﻿@model ArtModel.Artist
+@{
+}
+Create an Artist Account
+
+@using (Html.BeginForm("SaveArtist", "Login", FormMethod.Post))
+{
+
+    <div class="form-group">
+        <label asp-for="Name" class="control-label"></label>
+        <input asp-for="Name" class="form-control" value="@ViewData["Name"]" />
+    </div>
+    <div class="form-group">
+        <label asp-for="Location" class="control-label"></label>
+        <input asp-for="Location" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="Biography" class="control-label"></label>
+        <input asp-for="Biography" class="form-control" />
+    </div>
+
+
+        <div class="form-group">
+            <label asp-for="ArtistStatement" class="control-label"></label>
+            <input asp-for="ArtistStatement" class="form-control" />
+        </div>
+
+
+            <div class="form-group">
+                <label asp-for="ArtistPhoto" class="control-label"></label>
+                <input asp-for="ArtistPhoto" class="form-control" />
+            </div>
+
+    
+    <input type="submit" value="Create"/>
+
+}

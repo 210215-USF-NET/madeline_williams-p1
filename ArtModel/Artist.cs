@@ -2,7 +2,7 @@
 
 namespace ArtModel
 {
-    public class Artist : IArtist
+    public class Artist : IArtist, IUser 
     {
         private string countryCode = "";
         private int id;
