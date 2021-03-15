@@ -32,7 +32,7 @@ namespace ArtDL
             modelBuilder.Entity<SellerInventory>().ToTable("SellerInventory").HasKey(x => new { x.ArtId, x.SellerId });
 
             modelBuilder.Entity<BlackList>().HasNoKey().ToTable("BlackList");
-            modelBuilder.Entity<CollectorsGallery>().HasNoKey().ToTable("CollectorsGallery");
+            modelBuilder.Entity<CollectorsGallery>().ToTable("CollectorsGallery").HasKey(x => new { x.ArtId,x.CollectorId });
             modelBuilder.Entity<ArtistGallery>().HasNoKey().ToTable("ArtistGallery");
 
             modelBuilder.Entity<Collector>().HasData(new Collector { Id=1,Name="BidBot",Location="US",Email="fleeyourmind@hotmail.com"});

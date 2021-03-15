@@ -78,7 +78,7 @@ namespace ArtDL
             return _context.Auctions.Where(z => z.ArtId==id).AsNoTracking().FirstOrDefault().ClosingDate;
 
         }
-        public List<Art> GetAuctions(int id)
+        public List<Art> GetAuctions()
         {
             List<Art> arts = new List<Art>();
             List<Auction> ci = _context.Auctions.Where(x => x.ClosingDate > DateTime.Now).ToList();
@@ -94,6 +94,45 @@ namespace ArtDL
             return arts;
 
         }
+        public int GetAuction(int id)
+        {
+            return _context.Auctions.Where(x => x.ArtId == id).FirstOrDefault().Id;
+        }
+        public Bid Save(Bid bd)
+        {
+            Bid tc = _context.Bids.Add(bd).Entity;
+            _context.SaveChanges();
+            Art art = _context.Arts.Where(x => x.Id == tc.ArtId).FirstOrDefault();
+            if (art != null)
+            {
+                art.CurrentValue = bd.Amount;
+                _context.SaveChanges();
+            }
+            return tc;
+        }
+        public List<Art> GetAuctions(int collector)
+        {
+            List<Art> arts = new List<Art>();
+            List<Auction> ci = _context.Auctions.ToList();
+            if (ci == null)
+            {
+                return arts;
+            }
+            List<Bid> bid = _context.Bids.Where(x => x.CollectorId == collector).ToList();
+            foreach (Auction c in ci)
+            {
+
+                if (bid.Count>0 && arts.Where(x => x.Id == c.ArtId).FirstOrDefault() == null)
+                {
+                    Art art = _context.Arts.Where(x => x.Id == c.ArtId).FirstOrDefault();
+                    arts.Add(art);
+                }
+            }
+            return arts;
+
+        }
+
+
 
         public Collector Save(Collector user)
         {

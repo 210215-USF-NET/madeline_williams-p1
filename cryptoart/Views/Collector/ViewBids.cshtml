@@ -12,7 +12,7 @@
     ViewData["Title"] = "Art";
 }
 
-<h2>Auctions</h2>
+<h2>Your Bids</h2>
 
 
 <table class="table">
@@ -47,30 +47,39 @@
                         {
 
                             <span>Your High Bid</span>
-                            <span>$  @Html.Display(item.CollectorsBid.ToString(), "Html")</span>
+                            <span>$  @item.CollectorsBid.ToString()</span>
                         }
 
                         <span>Current High Bid</span>
 
                         $
                         @Html.DisplayFor(modelItem => item.CurrentValue)
-                        @if (item.CollectorsBid == item.CurrentValue)
+                        @if (item.ClosingDate > DateTime.Now)
                         {
-                            <div>Congratulations, You are the Currently highest bidder</div>
+                            @if (item.CollectorsBid == item.CurrentValue)
+                            {
+                                <div>Congratulations, You are the Currently highest bidder</div>
+                            }
+
+
+                            @using (Html.BeginForm("Bid", "Collector", FormMethod.Post))
+                            {
+                                <input type="hidden" name="ArtName" value="@Html.DisplayFor(modelItem => item.Name)" />
+                                <input type="hidden" name="ArtId" value="@Html.DisplayFor(modelItem => item.Id)" />
+                                <input type="submit" value="Bid On This Art" />
+                            }
+
+                            <span>This Auction Closes</span> @Html.DisplayFor(modelItem => item.ClosingDate)
                         }
-                        </div>
+                        else
+                        {
 
-                    @using (Html.BeginForm("MakeBid", "Collector", FormMethod.Post))
-                    {
-                        <input type="hidden" name="ArtName" value="@Html.DisplayFor(modelItem => item.Name)" />
-                        <input type="hidden" name="ArtId" value="@Html.DisplayFor(modelItem => item.Id)" />
-                        <input type="submit" value="Bid On This Art" />
-                    }
-      
-                        <span>This Auction Closes</span> @Html.DisplayFor(modelItem => item.ClosingDate)
-
-
-
+                            <span>This Auction is Closed</span>
+                            @if (item.CollectorsBid == item.CurrentValue) { 
+                            <div>Congratulations on your winning Bid</div>
+                            }
+}
+                    </div>
                     </td>
                     <td>
                     </td>

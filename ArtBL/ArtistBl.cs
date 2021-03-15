@@ -31,12 +31,12 @@ namespace auctionBL
         }
         public bool Owned(int id)
         {
-            return _repo.Owner( id) != "";
+            return _repo.Owner(id) != "";
 
         }
       public string Owner(int id)
         {
-            return _repo.Owner( id);
+            return _repo.Owner(id);
 
         }
 

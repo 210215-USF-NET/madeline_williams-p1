@@ -25,6 +25,8 @@ namespace cryptoart.Controllers
         {
             return View();
         }
+
+        [BidWorkerFilter]
         public ActionResult Gallery()
         {
             var ses = this.HttpContext.Session;
@@ -42,6 +44,7 @@ namespace cryptoart.Controllers
 
         }
 
+        [BidWorkerFilter]
         public ActionResult Auctions()
         {
             var ses = this.HttpContext.Session;

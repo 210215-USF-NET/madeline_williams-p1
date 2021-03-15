@@ -8,6 +8,8 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using cryptoart.Models;
+using ArtDL;
+
 namespace cryptoart.Controllers
 {
     public class ArtistController : Controller
@@ -39,7 +41,7 @@ namespace cryptoart.Controllers
             return View(_bl.GetArtists().ToList());
 
         }
-
+        [BidWorkerFilter]
         public ActionResult Gallery()
         {
             var ses = this.HttpContext.Session;
@@ -61,6 +63,7 @@ namespace cryptoart.Controllers
                 if (_bl.Owned(a.Id))
                 {
                     Da.Owner = _bl.Owner(a.Id);
+                    Da.Owned = true;
                 }
                 Da.InBid = _bl.InBid(a.Id);
                 arts.Add(Da);
@@ -85,10 +88,22 @@ namespace cryptoart.Controllers
         }
 
         // GET: ArtistController/Create
-        public ActionResult Create()
+        public ActionResult Submit()
         {
             return View();
         }
+
+        [HttpPost]
+        public IActionResult SaveArt(Art art, [FromServices] IArtistRepo repo)
+        {
+
+
+            repo.Save(art);
+
+            return RedirectToAction("Gallery", "Artist");
+        }
+
+
 
         // POST: ArtistController/Create
         [HttpPost]

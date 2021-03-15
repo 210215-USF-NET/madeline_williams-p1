@@ -115,6 +115,24 @@ namespace ArtDL
             return tc;
         }
 
+        public Art Save(Art art)
+        {
+            Art tc = _context.Arts.Find(art.Id);
+            if (tc == null)
+            {
+                tc = _context.Arts.Add(art).Entity;
+                _context.SaveChanges();
+
+            }
+            tc.Name = art.Name;
+            tc.ArtistCommentary = art.ArtistCommentary;
+            tc.Description = art.Description;
+            tc.Thumbnail = art.Thumbnail;
+            tc.Location = art.Location;
+            tc.ArtistId = art.ArtistId;
+            _context.SaveChanges();
+            return tc;
+        }
 
 
     }

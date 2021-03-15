@@ -6,5 +6,6 @@ namespace ArtDL
     public interface IArtRepo
     {
         public List<Art> GetAll();
+        public bool Maintain();
     }
 }

@@ -1,0 +1,17 @@
+﻿@model ArtModel.Bid
+@{
+}
+Create an Auction for @ViewData["Name"]
+
+@using (Html.BeginForm("SaveBid", "Collector", FormMethod.Post))
+{
+
+    <div class="form-group">
+        <label asp-for="Amount" class="control-label"></label>
+        <input asp-for="Amount" class="form-control" />
+    </div>
+    @Html.HiddenFor(m => m.AuctionId)
+    @Html.HiddenFor(m => m.ArtId)
+    <input type="submit" value="Bid" />
+
+}
