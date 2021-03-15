@@ -25,12 +25,12 @@
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Artist" asp-action="Artists">Artists</a>
                         </li>
-                        @if (Context.Session.GetString("user") == "seller"&& ViewContext.RouteData.Values["controller"].ToString()!="Login")
+                        @if (Context.Session.GetString("user") == "seller" && ViewContext.RouteData.Values["controller"].ToString() != "Login")
                         {
                             <li class="nav-item">
                                 <a class="nav-link text-dark" asp-area="" asp-controller="Seller" asp-action="Gallery">Create Auction</a>
                             </li>
-                          
+
                             <li class="nav-item">
                                 <a class="nav-link text-dark" asp-area="" asp-controller="Seller" asp-action="Gallery">View Inventory</a>
                             </li>
@@ -75,7 +75,13 @@
     </header>
     <div class="container">
         <main role="main" class="pb-3">
+            <div>
+                @{
+                    @await Component.InvokeAsync("Notify");
+                 }
+                </div>
             @RenderBody()
+
         </main>
     </div>
 

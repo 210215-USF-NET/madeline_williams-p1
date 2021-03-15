@@ -15,8 +15,6 @@ namespace cryptoart.Controllers
                  ses.SetString("user", "browser");
                 ses.SetInt32("id",-1);
                 ses.SetString("Name", "Generica");
-
-
         }
     }
 }

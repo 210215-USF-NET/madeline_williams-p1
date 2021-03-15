@@ -7,13 +7,15 @@ namespace cryptoart.Controllers
 {
     internal class BidWorkerFilterAttribute : ActionFilterAttribute
     {
-   
+
 
         public override void OnActionExecuting(ActionExecutingContext context)
         {
             var ses = context.HttpContext.Session;
             IArtRepo repo = context.HttpContext.RequestServices.GetService<IArtRepo>();
-            repo.Maintain();
+       
+                repo.Maintain();
+       
         }
     }
 }

@@ -22,7 +22,7 @@ namespace ArtDL
             return _context.Arts.ToList();
         }
 
-        public bool Maintain() 
+        public List<Auction> Maintain() 
         {
             List<Auction> auctions = _context.Auctions.Where(x => DateTime.Now > x.ClosingDate && x.Notify == 0).ToList();
             foreach (Auction a in auctions)
@@ -44,9 +44,58 @@ namespace ArtDL
                 _context.SaveChanges();
                
             }
-            return auctions.Count>0;
+            return auctions;
         }
+        public List<string> GetNotify(string user,int id)
+        {
+            List<Auction> auctions = new List<Auction>();
+            List<string> notifyList = new List<string>();
+            int checkbit = 0;
+            string flavor = "";
+            switch (user)
+            {
+                case "collector":
+                    auctions = _context.Auctions.Where(x => DateTime.Now > x.ClosingDate && (x.Notify & 2) == 0).ToList();
+                    checkbit = 2;
+                    flavor = "Congratulations! You Won ";
+                    break;
+                case "artist":
+                    auctions = _context.Auctions.Where(x => DateTime.Now > x.ClosingDate && (x.Notify & 4) == 0).ToList();
+                    checkbit = 4;
+                    flavor = "Congratulations! Your art ";
+                    break;
+                case "seller":
+                    auctions = _context.Auctions.Where(x => DateTime.Now > x.ClosingDate && (x.Notify &  8)==0 && x.SellerId==id).ToList();
+                    checkbit = 8;
+                    flavor = "Congratulations! Your auction ";
+                    break;
+                 default:
+                    return notifyList;
+                   
+            }
+            foreach (Auction a in auctions)
+            {
+                string art = "";
+                string closingBid = "";
+               
+                Art at = _context.Arts.Where(x => a.ArtId == x.Id).FirstOrDefault();
+                if (at != null)
+                {
+                    art = at.Name;
+                    closingBid = at.CurrentValue.ToString();
+                }
+              
+                 
 
+                if ((checkbit == 4 && at.ArtistId == id)|| checkbit==8 || (checkbit==2&& _context.Bids.Where(x => x.CollectorId == id && x.Amount.ToString() == at.CurrentValue.ToString()).FirstOrDefault()!=null))
+                {
+                    notifyList.Add(flavor + art + " sold for " + closingBid);
+                    a.Notify += checkbit;
+                    _context.SaveChanges();
+                }
+            }
+            return notifyList;
+        }
 
     }
 }

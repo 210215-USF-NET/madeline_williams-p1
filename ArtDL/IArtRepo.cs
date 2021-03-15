@@ -6,6 +6,7 @@ namespace ArtDL
     public interface IArtRepo
     {
         public List<Art> GetAll();
-        public bool Maintain();
+        public List<Auction> Maintain();
+        public List<string> GetNotify(string user,int id);
     }
 }
