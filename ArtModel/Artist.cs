@@ -15,6 +15,7 @@ namespace ArtModel
         public string Location { get; set; }
         public string Signature { get; set; }
         public string ArtistPhoto { get; set; }
+        public string Email { get; set; }
         public string CountryCode
         {
             get

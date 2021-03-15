@@ -1,0 +1,59 @@
+﻿
+
+
+@{
+    @model List<decoratedArt>;
+}
+<div class="text-center">
+    <h1 class="display-4">Art</h1>
+    <p>Here is a list of our art.</p>
+</div>
+
+
+
+@{
+    ViewData["Title"] = "Art";
+}
+
+<h2>Your Current Auctions</h2>
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+              
+            </th>
+          
+            <th>
+               
+            </th>
+            <th></th><th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+        <tr>
+
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td>
+
+                <div class="display-field">
+                    <img src="@Html.DisplayFor(modelItem => item.Thumbnail)" alt="@Html.DisplayFor(modelItem => item.Name)" />
+                </div>
+                <div class="display-field">
+                    Current Bid:
+                    $ @Html.DisplayFor(modelItem => item.CurrentValue)
+                </div>
+                    <span>Your Auction for this Item Closes</span> @Html.DisplayFor(modelItem => item.ClosingDate)
+            </td>
+            <td>
+                 
+</td>
+        </tr>
+        }
+        </tbody>
+</table>

@@ -73,6 +73,33 @@ namespace cryptoart.Controllers
         }
 
 
+        public IActionResult SaveSeller(Seller user, [FromServices] ISellerRepo repo)
+        {
+
+
+            user = repo.Save(user);
+            var ses = this.HttpContext.Session;
+            ses.SetInt32("id", user.Id);
+            ses.SetString("name", user.Name);
+            ses.SetString("user", "seller");
+
+            return RedirectToAction("Index", "Home");
+        }
+
+
+
+        public IActionResult SaveCollector(Collector user, [FromServices] ICollectorRepo repo)
+        {
+
+
+            user = repo.Save(user);
+            var ses = this.HttpContext.Session;
+            ses.SetInt32("id", user.Id);
+            ses.SetString("name", user.Name);
+            ses.SetString("user", "collector");
+
+            return RedirectToAction("Index", "Home");
+        }
         public IActionResult SaveArtist(Artist artist, [FromServices]IArtistRepo Ar )
         {
 
@@ -83,7 +110,7 @@ namespace cryptoart.Controllers
             ses.SetString("name",artist.Name);
             ses.SetString("user", "artist");
 
-            return View();
+            return RedirectToAction("Index", "Home");
         }
 
         [clearUserFilter]
@@ -96,12 +123,14 @@ namespace cryptoart.Controllers
         [clearUserFilter]
         public IActionResult Createseller()
         {
+            ViewData["Name"] = TempData["name"];
             return View();
         }
 
         [clearUserFilter]
         public IActionResult Createcollector()
         {
+            ViewData["Name"] = TempData["name"];
             return View();
         }
 

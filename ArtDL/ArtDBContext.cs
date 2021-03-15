@@ -29,9 +29,8 @@ namespace ArtDL
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-        
+            modelBuilder.Entity<SellerInventory>().ToTable("SellerInventory").HasKey(x => new { x.ArtId, x.SellerId });
 
-            modelBuilder.Entity<SellerInventory>().HasNoKey().ToTable("SellerInventory");
             modelBuilder.Entity<BlackList>().HasNoKey().ToTable("BlackList");
             modelBuilder.Entity<CollectorsGallery>().HasNoKey().ToTable("CollectorsGallery");
             modelBuilder.Entity<ArtistGallery>().HasNoKey().ToTable("ArtistGallery");
@@ -89,6 +88,7 @@ namespace ArtDL
                 new Art { Id = 7, Name = "A large Lost Kraken", Location = "US", Description = "The Monster of the deep rises", ArtistCommentary = "Philosophical contemplation of the deep", MaxSeries = 1, ArtistId = 4 },
                 new Art { Id = 8, Name = "Unfortunate Mayhem", Location = "US", Description = "Abstracted ant farm", ArtistCommentary = "we fall into the process driven by maddness", MaxSeries = 1, ArtistId = 1 },
                 new Art { Id = 9, Name = "Dabble Doodle", Location = "UK", Description = "A scrawl of broken lines fluttering in and out of existence", ArtistCommentary = "there are no more tears left to spare", MaxSeries = 1, ArtistId = 2 });
-        }
+
+            }
     }
 }

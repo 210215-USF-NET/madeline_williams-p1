@@ -3,7 +3,7 @@
 
 namespace ArtModel
 {
-    public class Collector : ICollector
+    public class Collector : ICollector, IUser
     {
         public int Id { get; set; }
         public String Name { get; set; }

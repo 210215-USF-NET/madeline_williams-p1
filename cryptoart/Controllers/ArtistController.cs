@@ -6,8 +6,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-
-
+using Microsoft.AspNetCore.Mvc.Rendering;
+using cryptoart.Models;
 namespace cryptoart.Controllers
 {
     public class ArtistController : Controller
@@ -40,11 +40,42 @@ namespace cryptoart.Controllers
 
         }
 
-        public ActionResult Gallery(int id)
+        public ActionResult Gallery()
         {
+            var ses = this.HttpContext.Session;
+            int artist=(int)ses.GetInt32("id");
 
-            return View(_bl.GetArtists().ToList());
+            List<SelectListItem> optionList = new List<SelectListItem>()
+            {
+    
+            };
+            foreach (Seller s in _bl.GetSellers())
+            {
+                optionList.Add(new SelectListItem { Text = s.Name, Value = s.Id.ToString()});
+            }
+            ViewBag.ListItem = optionList;
+            List<decoratedArt> arts = new List<decoratedArt>();
+            foreach (Art a in _bl.GetArt(artist).ToList())
+            {
+                decoratedArt Da = new decoratedArt(a);
+                if (_bl.Owned(a.Id))
+                {
+                    Da.Owner = _bl.Owner(a.Id);
+                }
+                Da.InBid = _bl.InBid(a.Id);
+                arts.Add(Da);
+            }
+            return View(arts);
 
+        }
+        [HttpPost]
+        public ActionResult Attach(IFormCollection collection)
+        {
+            int sellid = int.Parse(Request.Form["ListItem"].ToString());
+            int artid = int.Parse(Request.Form["ArtId"].ToString());
+            _bl.Attach(artid, sellid);
+            TempData["attached"] = artid;
+            return RedirectToAction("Gallery");
         }
 
         // GET: ArtistController/Details/5

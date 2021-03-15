@@ -10,6 +10,7 @@ namespace ArtModel
     {
         public string type { get; set; }
         public int id { get; set; }
+        public String Email { get; set; }
         public ArrayList user { get; set; }
     }
 }

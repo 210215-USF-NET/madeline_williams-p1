@@ -10,5 +10,7 @@
         string Location { get; set; }
         string Name { get; set; }
         string Signature { get; set; }
+        string Email { get; set; }
+
     }
 }

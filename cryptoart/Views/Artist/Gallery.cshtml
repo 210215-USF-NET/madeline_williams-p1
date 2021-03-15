@@ -2,7 +2,7 @@
 
 
 @{
-    @model List<ArtModel.Art>;
+    @model List<decoratedArt>;
 }
 <div class="text-center">
     <h1 class="display-4">Art</h1>
@@ -30,24 +30,57 @@
             <th>
                
             </th>
-            <th></th>
+            <th></th><th></th>
         </tr>
     </thead>
     <tbody>
         @foreach (var item in Model)
         {
-            <tr>
+        <tr>
 
-                <td>
-                    @Html.DisplayFor(modelItem => item.Name)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Thumbnail)
-                </td>
-                <td>
-                   $ @Html.DisplayFor(modelItem => item.CurrentValue)
-                </td>
-            </tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td>
+
+                <div class="display-field">
+                    <img src="@Html.DisplayFor(modelItem => item.Thumbnail)" alt="@Html.DisplayFor(modelItem => item.Name)" />
+                </div>
+                <div class="display-field">
+                    Current Value:
+                    $ @Html.DisplayFor(modelItem => item.CurrentValue)
+                </div>
+                @if (item.Owned)
+                {
+                <div class="display-field">
+                    Owner:
+                    $ @Html.DisplayFor(modelItem => item.Owner)
+                </div>
+                }
+              
+            </td>
+            <td>
+                @if (TempData["attached"] != null && int.Parse(TempData["attached"].ToString()) == item.Id) {
+                <div class="display-field">
+                    You have successfully attached this Art
+                    </div>
+                    }
+                    else {
+                    @if (!item.Owned && !item.InBid)
+                    {
+                        @Html.DisplayFor(modelItem => item.Owner)
+
+                        @using (Html.BeginForm("Attach", "Artist", FormMethod.Post))
+                        {
+
+                            @Html.DropDownList("ListItem")
+                            <input type="hidden" name="ArtId" value="@Html.DisplayFor(modelItem => item.Id)" />
+                            <input type="submit" value="attach this art to seller" />
+                        }
+                    }
+                    }
+</td>
+        </tr>
         }
         </tbody>
 </table>

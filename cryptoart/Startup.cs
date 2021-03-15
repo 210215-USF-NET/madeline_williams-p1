@@ -29,6 +29,8 @@ namespace cryptoart
             services.AddControllersWithViews();
             services.AddDbContext<ArtDBContext>(options=>options.UseNpgsql(Configuration.GetConnectionString("ArtDB")));
             services.AddScoped<IArtistRepo,ArtistRepo>();
+            services.AddScoped<ISellerRepo, SellerRepo>();
+            services.AddScoped<ICollectorRepo, CollectorRepo>();
             services.AddScoped<bl.IArtistBl, bl.ArtistBl>();
             services.AddScoped<IArtRepo, ArtRepo>();
             services.AddScoped<bl.IArtBl, bl.ArtBl>();
