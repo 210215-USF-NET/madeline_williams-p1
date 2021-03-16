@@ -11,6 +11,7 @@ using System.Threading.Tasks;
 using bl=auctionBL;
 using ArtModel;
 using ArtDL;
+using Serilog;
 namespace cryptoart.Controllers
 {
     public class LoginController : Controller
@@ -63,6 +64,7 @@ namespace cryptoart.Controllers
             }
                 else
                 {
+                Log.Warning("user not found, sending to create user");
                 TempData["name"] = Request.Form["name"].ToString();
                    return  RedirectToAction( "Create" + ses.GetString("user"), "Login");
                 }
@@ -84,6 +86,10 @@ namespace cryptoart.Controllers
                 ses.SetString("user", "seller");
 
             }
+            else
+            {
+                Log.Warning("Seller Issue Saving, Model not valid");
+            }
             return RedirectToAction("Index", "Home");
         }
 
@@ -100,6 +106,10 @@ namespace cryptoart.Controllers
                 ses.SetString("name", user.Name);
                 ses.SetString("user", "collector");
             }
+            else
+            {
+                Log.Warning("Collector Issue Saving, Model not valid");
+            }
             return RedirectToAction("Index", "Home");
         }
         public IActionResult SaveArtist(Artist artist, [FromServices]IArtistRepo Ar )
@@ -112,6 +122,10 @@ namespace cryptoart.Controllers
                 ses.SetInt32("id", artist.Id);
                 ses.SetString("name", artist.Name);
                 ses.SetString("user", "artist");
+            }
+            else
+            {
+                Log.Warning("Artist Issue Saving, Model not valid");
             }
             return RedirectToAction("Index", "Home");
         }

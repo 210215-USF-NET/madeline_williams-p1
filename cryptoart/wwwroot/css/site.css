@@ -5,8 +5,12 @@ a.navbar-brand {
   white-space: normal;
   text-align: center;
   word-break: break-all;
-}
 
+}
+header {
+    background-color: darkslategrey;
+    color: azure;
+}
 /* Provide sufficient contrast against white background */
 a {
   color: #0366d6;

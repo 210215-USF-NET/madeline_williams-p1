@@ -8,7 +8,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
-
+using Serilog;
 
 namespace cryptoart
 {
@@ -16,7 +16,15 @@ namespace cryptoart
     {
         public static void Main(string[] args)
         {
+            Log.Logger = new LoggerConfiguration()
+                .MinimumLevel.Debug()
+                .WriteTo.Console()
+                .WriteTo.File("logs/myapp.txt", rollingInterval: RollingInterval.Day)
+                .CreateLogger();
+
+            Log.Information("Welcome to CryptoArt");
             CreateHostBuilder(args).Build().Run();
+            Log.CloseAndFlush();
         }
 
         public static IHostBuilder CreateHostBuilder(string[] args) =>

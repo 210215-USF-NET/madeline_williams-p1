@@ -1,6 +1,7 @@
 ﻿using System;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc.Filters;
+using Serilog;
 namespace cryptoart.Controllers
 {
     internal class userFilterAttribute : ActionFilterAttribute
@@ -16,8 +17,7 @@ namespace cryptoart.Controllers
                  ses.SetString("user", "browser");
                 ses.SetInt32("id",-1);
                 ses.SetString("Name", "Generica");
-                //ses.SetString("user", "seller");
-                //ses.SetString("user", "artist");
+                Log.Warning("Clearing out user information");
 
             }
 

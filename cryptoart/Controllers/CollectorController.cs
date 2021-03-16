@@ -7,6 +7,7 @@ using ArtDL;
 using Microsoft.AspNetCore.Http;
 using ArtModel;
 using cryptoart.Models;
+using Serilog;
 
 namespace cryptoart.Controllers
 {
@@ -61,6 +62,7 @@ namespace cryptoart.Controllers
                 decoratedArtCollector tmpart = arts.Where(x => x.Id == b.ArtId).FirstOrDefault();
                 if (tmpart!=null &&tmpart.CollectorsBid < b.Amount)
                 {
+                    Log.Warning("No bids for user");
                     arts.Where(x => x.Id == b.ArtId).FirstOrDefault().CollectorsBid = b.Amount;
                 }
             }
@@ -89,6 +91,7 @@ namespace cryptoart.Controllers
                 decoratedArtCollector art = arts.Where(x => x.Id == b.ArtId).FirstOrDefault();
                 if (art != null && art.CollectorsBid < b.Amount)
                 {
+                    Log.Warning("No bids for user");
                     art.CollectorsBid = b.Amount;
                 }
             }
@@ -117,6 +120,10 @@ namespace cryptoart.Controllers
                 bid.TimeOfBid = DateTime.Now;
                 _repo.Save(bid);
                 return RedirectToAction("ViewBids", "Collector");
+            }
+            else
+            {
+                Log.Warning("Error Saving Bid");
             }
             return View(bid);
         }

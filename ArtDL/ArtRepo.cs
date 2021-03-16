@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using ArtModel;
 using Microsoft.EntityFrameworkCore;
-
+using Serilog;
 namespace ArtDL
 {
     public class ArtRepo:IArtRepo
@@ -30,6 +30,7 @@ namespace ArtDL
                 SellerInventory si = _context.SellerInventories.Where(x => x.ArtId == a.ArtId).FirstOrDefault();
                 if (si != null)
                 {
+                    Log.Information("Removing art "+a.ArtId+ "from seller");
                     _context.SellerInventories.Remove(si);
                     _context.SaveChanges();
                 }
@@ -37,7 +38,8 @@ namespace ArtDL
                 cg.ArtId = a.ArtId;
                 Bid bid = _context.Bids.Where(x => x.ArtId == a.ArtId && x.TimeOfBid < a.ClosingDate).OrderByDescending(z => z.TimeOfBid).FirstOrDefault();
                 cg.CollectorId = bid.CollectorId;
-                if (_context.CollectorsGalleries.Where(x => cg.CollectorId == x.CollectorId && cg.ArtId == x.ArtId).FirstOrDefault() == null) { 
+                if (_context.CollectorsGalleries.Where(x => cg.CollectorId == x.CollectorId && cg.ArtId == x.ArtId).FirstOrDefault() == null) {
+                    Log.Information("adding art " + a.ArtId + "to collector");
                     _context.CollectorsGalleries.Add(cg);
                 }
                 a.Notify = 1;
@@ -89,11 +91,13 @@ namespace ArtDL
 
                 if ((checkbit == 4 && at.ArtistId == id)|| checkbit==8 || (checkbit==2&& _context.Bids.Where(x => x.CollectorId == id && x.Amount == at.CurrentValue).FirstOrDefault()!=null))
                 {
+                    Log.Information("adding art " + a.ArtId + "to notification list");
                     notifyList.Add(flavor + art + " sold for " + closingBid);
                     a.Notify += checkbit;
                     _context.SaveChanges();
                 }
             }
+            Log.CloseAndFlush();
             return notifyList;
         }
 

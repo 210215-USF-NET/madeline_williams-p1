@@ -7,6 +7,7 @@ using ArtDL;
 using Microsoft.AspNetCore.Http;
 using ArtModel;
 using cryptoart.Models;
+using Serilog;
 namespace cryptoart.Controllers
 {
     public class SellerController : Controller
@@ -93,6 +94,10 @@ namespace cryptoart.Controllers
                     auction.Notify = 0;
                     //  _repo.Save(auction);
                     return RedirectToAction("Gallery", "Seller");
+                }
+                else
+                {
+                    Log.Warning("Issue Creating Auction, Model not valid");
                 }
             }
             TempData["ArtId"] =TempData["ArtId"];

@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using ArtDL;
 using ArtModel;
+using Serilog;
 namespace cryptoart.viewcomponents
 {
 
@@ -21,15 +22,22 @@ namespace cryptoart.viewcomponents
         public IViewComponentResult Invoke()
         {
             var ses = this.HttpContext.Session;
-            int user = (int)ses.GetInt32("id");
-            string ut = ses.GetString("user");
-            List<string> articles = new List<string>();
-            if (user > -1)
+            if (ses.GetInt32("id") != null)
             {
-                articles = _repo.GetNotify(ut, user);
-            }
+                int user = (int)ses.GetInt32("id");
+                string ut = ses.GetString("user");
+                List<string> articles = new List<string>();
+                if (user > -1)
+                {
+                    articles = _repo.GetNotify(ut, user);
+                }
 
-            return View(articles);
+                return View(articles);
+            }
+            else {
+                Log.Information("No User Set");
+                return View();
+            }
         }
     }
     }
