@@ -75,14 +75,15 @@ namespace cryptoart.Controllers
 
         public IActionResult SaveSeller(Seller user, [FromServices] ISellerRepo repo)
         {
+            if (ModelState.IsValid)
+            {
+                user = repo.Save(user);
+                var ses = this.HttpContext.Session;
+                ses.SetInt32("id", user.Id);
+                ses.SetString("name", user.Name);
+                ses.SetString("user", "seller");
 
-
-            user = repo.Save(user);
-            var ses = this.HttpContext.Session;
-            ses.SetInt32("id", user.Id);
-            ses.SetString("name", user.Name);
-            ses.SetString("user", "seller");
-
+            }
             return RedirectToAction("Index", "Home");
         }
 
@@ -90,26 +91,28 @@ namespace cryptoart.Controllers
 
         public IActionResult SaveCollector(Collector user, [FromServices] ICollectorRepo repo)
         {
+            if (ModelState.IsValid)
+            {
 
-
-            user = repo.Save(user);
-            var ses = this.HttpContext.Session;
-            ses.SetInt32("id", user.Id);
-            ses.SetString("name", user.Name);
-            ses.SetString("user", "collector");
-
+                user = repo.Save(user);
+                var ses = this.HttpContext.Session;
+                ses.SetInt32("id", user.Id);
+                ses.SetString("name", user.Name);
+                ses.SetString("user", "collector");
+            }
             return RedirectToAction("Index", "Home");
         }
         public IActionResult SaveArtist(Artist artist, [FromServices]IArtistRepo Ar )
         {
 
-    
-           artist= Ar.Save(artist);
-            var ses = this.HttpContext.Session;
-            ses.SetInt32("id", artist.Id);
-            ses.SetString("name",artist.Name);
-            ses.SetString("user", "artist");
-
+            if (ModelState.IsValid)
+            {
+                artist = Ar.Save(artist);
+                var ses = this.HttpContext.Session;
+                ses.SetInt32("id", artist.Id);
+                ses.SetString("name", artist.Name);
+                ses.SetString("user", "artist");
+            }
             return RedirectToAction("Index", "Home");
         }
 

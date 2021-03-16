@@ -87,7 +87,7 @@ namespace ArtDL
               
                  
 
-                if ((checkbit == 4 && at.ArtistId == id)|| checkbit==8 || (checkbit==2&& _context.Bids.Where(x => x.CollectorId == id && x.Amount.ToString() == at.CurrentValue.ToString()).FirstOrDefault()!=null))
+                if ((checkbit == 4 && at.ArtistId == id)|| checkbit==8 || (checkbit==2&& _context.Bids.Where(x => x.CollectorId == id && x.Amount == at.CurrentValue).FirstOrDefault()!=null))
                 {
                     notifyList.Add(flavor + art + " sold for " + closingBid);
                     a.Notify += checkbit;

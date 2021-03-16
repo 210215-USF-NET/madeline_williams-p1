@@ -1,5 +1,5 @@
 ﻿using System;
-
+using System.ComponentModel.DataAnnotations;
 
 namespace ArtModel
 {
@@ -19,9 +19,11 @@ namespace ArtModel
             set { id = value; }
         }
         public string Location { get; set; }
+        [Required]
         public string Name { get { return name; } set { name = value; } }
         public string Description { get { return description; } set { description = value; } }
         public string ArtistCommentary { get { return artiststatement; } set { artiststatement = value; } }
+        [Required]
         public string Thumbnail { get; set; }
         public Byte[] Fullart { get; set; }
         public int MaxSeries { get; set; }

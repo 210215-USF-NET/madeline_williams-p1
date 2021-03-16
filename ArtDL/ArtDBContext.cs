@@ -79,15 +79,15 @@ namespace ArtDL
                            ArtistPhoto = ""
                        });
             modelBuilder.Entity<Art>().HasData(
-                new Art { Id = 1, Name = "The Exquisite Loss of Hearing", Location = "US", ArtistCommentary = "", Description = "digital art produced by transforming the waveform of ringing bells into an abstract painting", CurrentValue = 0.00m, MaxSeries = 1, Thumbnail = "", ArtistId = 3 },
-                new Art { Id = 2, Name = "Scream, scream, cry", Location = "NZ", Description = "A child menaced by dark figures in the background, screams with laughter, a tear drops from her eye", ArtistCommentary = "a phsyical representation of my bipolar disorder", MaxSeries = 1, ArtistId = 4, Thumbnail = "" },
-                new Art { Id = 3, Name = "Dookey", Location = "US", Description = "a peice of poo on a stick", ArtistCommentary = "all art is crap", MaxSeries = 1000, ArtistId = 2, Thumbnail = "" },
-                new Art { Id = 4, Name = "Shatter", Location = "US", Description = "A photo of broken glass", ArtistCommentary = "shatter your conceptions", MaxSeries = 1, ArtistId = 1, Thumbnail = "" },
-                new Art { Id = 5, Name = "A field of Broken Skies", Location = "IT", Description = "The world swirls with silver tears among a beautiful goat farm", ArtistCommentary = "Bah", MaxSeries = 1, ArtistId = 1, Thumbnail = "" },
-                new Art { Id = 6, Name = "Scratchy Painting", Location = "UK", Description = "random scribbles on a canvas", ArtistCommentary = "all the beats are made of stars", MaxSeries = 1, ArtistId = 6, Thumbnail = "" },
-                new Art { Id = 7, Name = "A large Lost Kraken", Location = "US", Description = "The Monster of the deep rises", ArtistCommentary = "Philosophical contemplation of the deep", MaxSeries = 1, ArtistId = 4 },
-                new Art { Id = 8, Name = "Unfortunate Mayhem", Location = "US", Description = "Abstracted ant farm", ArtistCommentary = "we fall into the process driven by maddness", MaxSeries = 1, ArtistId = 1 },
-                new Art { Id = 9, Name = "Dabble Doodle", Location = "UK", Description = "A scrawl of broken lines fluttering in and out of existence", ArtistCommentary = "there are no more tears left to spare", MaxSeries = 1, ArtistId = 2 });
+                new Art { Id = 1, Name = "The Exquisite Loss of Hearing", Location = "US", ArtistCommentary = "", Description = "digital art produced by transforming the waveform of ringing bells into an abstract painting", CurrentValue = 0.00m, MaxSeries = 1, Thumbnail = "https://i.ibb.co/GRKVGkB/IMG-0586.jpg", ArtistId = 3 },
+                new Art { Id = 2, Name = "Scream, scream, cry", Location = "NZ", Description = "A child menaced by dark figures in the background, screams with laughter, a tear drops from her eye", ArtistCommentary = "a phsyical representation of my bipolar disorder", MaxSeries = 1, ArtistId = 4, Thumbnail = "https://i.ibb.co/GC2T2zL/IMG-0680.jpg" },
+                new Art { Id = 3, Name = "Dookey", Location = "US", Description = "a peice of poo on a stick", ArtistCommentary = "all art is crap", MaxSeries = 1000, ArtistId = 2, Thumbnail = "https://i.ibb.co/QKtMbnN/IMG-0759.jpg" },
+                new Art { Id = 4, Name = "Shatter", Location = "US", Description = "A photo of broken glass", ArtistCommentary = "shatter your conceptions", MaxSeries = 1, ArtistId = 1, Thumbnail = "https://i.ibb.co/fvB79xR/IMG-0887.jpg" },
+                new Art { Id = 5, Name = "A field of Broken Skies", Location = "IT", Description = "The world swirls with silver tears among a beautiful goat farm", ArtistCommentary = "Bah", MaxSeries = 1, ArtistId = 1, Thumbnail = "https://i.ibb.co/LC6Hxrg/IMG-0952.jpg" },
+                new Art { Id = 6, Name = "Scratchy Painting", Location = "UK", Description = "random scribbles on a canvas", ArtistCommentary = "all the beats are made of stars", MaxSeries = 1, ArtistId = 6, Thumbnail = "https://i.ibb.co/KVd4RDQ/IMG-0968.jpg" },
+                new Art { Id = 7, Name = "A large Lost Kraken", Location = "US", Description = "The Monster of the deep rises", ArtistCommentary = "Philosophical contemplation of the deep", MaxSeries = 1, ArtistId = 4 ,Thumbnail= "https://i.ibb.co/82PFhLv/MWXY7301.jpg" },
+                new Art { Id = 8, Name = "Unfortunate Mayhem", Location = "US", Description = "Abstracted ant farm", ArtistCommentary = "we fall into the process driven by maddness", MaxSeries = 1, ArtistId = 1,Thumbnail= "https://i.ibb.co/KVd4RDQ/IMG-0968.jpg" },
+                new Art { Id = 9, Name = "Dabble Doodle", Location = "UK", Description = "A scrawl of broken lines fluttering in and out of existence", ArtistCommentary = "there are no more tears left to spare", MaxSeries = 1, ArtistId = 2 ,Thumbnail= "https://i.ibb.co/pdxk9nh/VFDU8450.jpg" });
 
             }
     }

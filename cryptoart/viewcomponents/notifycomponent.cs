@@ -23,8 +23,11 @@ namespace cryptoart.viewcomponents
             var ses = this.HttpContext.Session;
             int user = (int)ses.GetInt32("id");
             string ut = ses.GetString("user");
-            List<string> articles = _repo.GetNotify(ut,user);
- 
+            List<string> articles = new List<string>();
+            if (user > -1)
+            {
+                articles = _repo.GetNotify(ut, user);
+            }
 
             return View(articles);
         }

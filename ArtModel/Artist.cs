@@ -1,5 +1,5 @@
 ﻿
-
+using System.ComponentModel.DataAnnotations;
 namespace ArtModel
 {
     public class Artist : IArtist, IUser 
@@ -9,6 +9,7 @@ namespace ArtModel
         string name = "";
         string biography = "";
         public int Id { get { return id; } set { id = value; } }
+        [Required]
         public string Name { get { return name; } set { name = value; } }
         public string Biography { get { return biography; } set { biography = value; } }
         public string ArtistStatement { get; set; }

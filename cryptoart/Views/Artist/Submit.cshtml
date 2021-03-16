@@ -2,14 +2,15 @@
 @{
 }
 Submit Your Art
-
+@Html.ValidationSummary(true, "", new { @class = "text-danger" })
 @using (Html.BeginForm("SaveArt", "Artist", FormMethod.Post))
 {
 
-    <div class="form-group">
-        <label asp-for="Name" class="control-label"></label>
-        <input asp-for="Name" class="form-control" />
-    </div>
+<div class="form-group">
+    <label asp-for="Name" class="control-label"></label>
+    <input asp-for="Name" class="form-control" />
+    @Html.ValidationMessageFor(model => model.Name, "", new { @class = "text-danger" })
+</div>
     <div class="form-group">
         <label asp-for="Location" class="control-label"></label>
         <input asp-for="Location" class="form-control" />
@@ -29,6 +30,7 @@ Submit Your Art
     <div class="form-group">
         <label asp-for="Thumbnail" class="control-label"></label>
         <input asp-for="Thumbnail" class="form-control" />
+        @Html.ValidationMessageFor(model => model.Thumbnail, "", new { @class = "text-danger" })
     </div>
     <input type="hidden" name="ArtistId" value="@Context.Session.GetInt32("id")" />
     <input type="submit" value="Create" />

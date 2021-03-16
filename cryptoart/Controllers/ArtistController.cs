@@ -96,9 +96,13 @@ namespace cryptoart.Controllers
         [HttpPost]
         public IActionResult SaveArt(Art art, [FromServices] IArtistRepo repo)
         {
+            if (ModelState.IsValid)
+            { 
 
+                repo.Save(art);
+            }
 
-            repo.Save(art);
+          
 
             return RedirectToAction("Gallery", "Artist");
         }

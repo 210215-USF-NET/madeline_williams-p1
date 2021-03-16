@@ -62,12 +62,18 @@ namespace cryptoart.Controllers
 
         }
 
-
+    
         [HttpPost]
         public ActionResult CreateAuction(IFormCollection collection)
         {
-            ViewData["Name"]=Request.Form["ListItem"].ToString();
-            ViewData["ArtId"] = Request.Form["ArtId"].ToString();
+            TempData["Name"]=Request.Form["Name"].ToString();
+            TempData["ArtId"] = Request.Form["ArtId"].ToString();
+
+            return View();
+        }
+        [HttpGet]
+        public ActionResult FailedAuction()
+        {
 
             return View();
         }
@@ -77,14 +83,21 @@ namespace cryptoart.Controllers
         [HttpPost]
         public IActionResult SaveAuction(Auction auction)
         {
-
-            var ses = this.HttpContext.Session;
-            int seller = (int)ses.GetInt32("id");
-            auction.SellerId = seller;
-            auction.Notify = 0;
-            _repo.Save(auction);
-            
-            return RedirectToAction("Gallery", "Seller");
+            if (ModelState.IsValid)
+            {
+                if (auction.ClosingDate > DateTime.Now.AddMinutes(5))
+                {
+                    var ses = this.HttpContext.Session;
+                    int seller = (int)ses.GetInt32("id");
+                    auction.SellerId = seller;
+                    auction.Notify = 0;
+                    //  _repo.Save(auction);
+                    return RedirectToAction("Gallery", "Seller");
+                }
+            }
+            TempData["ArtId"] =TempData["ArtId"];
+            TempData["Name"] = TempData["Name"];
+            return RedirectToAction("FailedAuction","Seller");
         }
 
 

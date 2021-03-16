@@ -12,10 +12,11 @@ namespace cryptoart.Controllers
         public override void OnActionExecuting(ActionExecutingContext context)
         {
             var ses = context.HttpContext.Session;
+            if (ses.GetInt32("id") > -1) { 
             IArtRepo repo = context.HttpContext.RequestServices.GetService<IArtRepo>();
-       
-                repo.Maintain();
-       
+
+            repo.Maintain();
+        }
         }
     }
 }

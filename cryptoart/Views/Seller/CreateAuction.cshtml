@@ -1,21 +1,23 @@
 ﻿@model ArtModel.Auction
 @{
 }
-Create an Auction for @ViewData["Name"]
-
+Create an Auction for @TempData["Name"]
+@Html.ValidationSummary(true, "", new { @class = "text-danger" })
 @using (Html.BeginForm("SaveAuction", "Seller", FormMethod.Post))
 {
 
     <div class="form-group">
         <label asp-for="MinimumBid" class="control-label"></label>
         <input asp-for="MinimumBid" class="form-control" />
+        @Html.ValidationMessageFor(model => model.MinimumBid, "", new { @class = "text-danger" })
     </div>
     <div class="form-group">
         <label asp-for="ClosingDate" class="control-label"></label>
         <input asp-for="ClosingDate" class="form-control" />
+        @Html.ValidationMessageFor(model => model.ClosingDate, "", new { @class = "text-danger" })
     </div>
 
-    <input type="hidden" asp-for="ArtId" name="ArtId" value="@ViewData["ArtId"]" />
+    <input type="hidden" asp-for="ArtId" name="ArtId" value="@TempData["ArtId"]" />
     <input type="submit" value="Create" />
 
 }

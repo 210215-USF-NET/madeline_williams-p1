@@ -76,7 +76,7 @@ namespace ArtDL
         public bool InBid(int id)
         {
              
-            return _context.Auctions.AsNoTracking().Where(q=>q.ClosingDate<DateTime.Now&&q.ArtId==id).FirstOrDefault()!=null;
+            return _context.Auctions.AsNoTracking().Where(q=>q.ClosingDate>DateTime.Now&&q.ArtId==id).FirstOrDefault()!=null;
         }
 
         public List<Seller> GetSellers(int id)

@@ -17,6 +17,6 @@ namespace ArtDL
         public bool InBid(int id);
         public string Owner(int id);
         public bool Attach(int aid, int sid);
-
+        public Artist GetArtist(string name);
     }
 }

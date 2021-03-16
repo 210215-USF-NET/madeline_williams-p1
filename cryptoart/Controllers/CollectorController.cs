@@ -109,12 +109,16 @@ namespace cryptoart.Controllers
         [HttpPost]
         public ActionResult SaveBid(Bid bid)
         {
-            var ses = this.HttpContext.Session;
-            int collector = (int)ses.GetInt32("id");
-            bid.CollectorId = collector;
-            bid.TimeOfBid = DateTime.Now;
-            _repo.Save(bid);
-            return RedirectToAction("ViewBids", "Collector");
+            if (ModelState.IsValid)
+            {
+                var ses = this.HttpContext.Session;
+                int collector = (int)ses.GetInt32("id");
+                bid.CollectorId = collector;
+                bid.TimeOfBid = DateTime.Now;
+                _repo.Save(bid);
+                return RedirectToAction("ViewBids", "Collector");
+            }
+            return View(bid);
         }
 
     }
