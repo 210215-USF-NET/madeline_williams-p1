@@ -16,3 +16,6 @@ Create an Auction for @ViewData["Name"]
     <input type="submit" value="Bid" />
 
 }
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

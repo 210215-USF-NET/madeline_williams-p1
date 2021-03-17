@@ -6,11 +6,11 @@ Submit Your Art
 @using (Html.BeginForm("SaveArt", "Artist", FormMethod.Post))
 {
 
-<div class="form-group">
-    <label asp-for="Name" class="control-label"></label>
-    <input asp-for="Name" class="form-control" />
-    @Html.ValidationMessageFor(model => model.Name, "", new { @class = "text-danger" })
-</div>
+    <div class="form-group">
+        <label asp-for="Name" class="control-label"></label>
+        <input asp-for="Name" class="form-control" />
+        @Html.ValidationMessageFor(model => model.Name, "", new { @class = "text-danger" })
+    </div>
     <div class="form-group">
         <label asp-for="Location" class="control-label"></label>
         <input asp-for="Location" class="form-control" />
@@ -35,4 +35,7 @@ Submit Your Art
     <input type="hidden" name="ArtistId" value="@Context.Session.GetInt32("id")" />
     <input type="submit" value="Create" />
 
+}
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
 }

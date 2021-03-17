@@ -115,18 +115,26 @@ namespace cryptoart.Controllers
         {
             if (ModelState.IsValid)
             {
-                var ses = this.HttpContext.Session;
-                int collector = (int)ses.GetInt32("id");
-                bid.CollectorId = collector;
-                bid.TimeOfBid = DateTime.Now;
-                _repo.Save(bid);
-                return RedirectToAction("ViewBids", "Collector");
+                if (bid.Amount > _repo.GetHighestBid(bid.AuctionId))
+                {
+                    var ses = this.HttpContext.Session;
+                    int collector = (int)ses.GetInt32("id");
+                    bid.CollectorId = collector;
+                    bid.TimeOfBid = DateTime.Now;
+                    _repo.Save(bid);
+                    return RedirectToAction("ViewBids", "Collector");
+                }
+                else
+                {
+                    Log.Warning("Error Saving Bid");
+
+                }
             }
             else
             {
                 Log.Warning("Error Saving Bid");
             }
-            return View(bid);
+            return RedirectToAction("FailedBid", "Collector");
         }
 
     }

@@ -9,6 +9,8 @@ namespace ArtModel
         [Required]
         public String Name { get; set; }
         public String Location { get; set; }
+        [Required]
+        [EmailAddress]
         public String Email { get; set; }
     }
 }

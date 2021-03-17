@@ -21,3 +21,7 @@ Create an Auction for @TempData["Name"]
     <input type="submit" value="Create" />
 
 }
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

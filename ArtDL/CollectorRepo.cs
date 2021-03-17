@@ -49,6 +49,10 @@ namespace ArtDL
             return name;
 
         }
+        public decimal GetHighestBid(int id)
+        {
+            return _context.Bids.Where(x => x.AuctionId == id).OrderByDescending(c => c.Amount).FirstOrDefault().Amount;
+        }
         public List<Art> GetArt(int id)
         {
             List<Art> arts = new List<Art>();

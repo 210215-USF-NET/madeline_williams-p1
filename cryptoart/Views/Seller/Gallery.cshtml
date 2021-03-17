@@ -78,7 +78,7 @@ else
                             @Html.DisplayFor(modelItem => item.CurrentValue)
 
                         </div>
-                        @if (!item.InBid || item.Owner!=ViewData["SellerName"].ToString())
+                        @if (!item.InBid && item.Owner!=ViewData["SellerName"].ToString())
                         {
                             @using (Html.BeginForm("CreateAuction", "Seller", FormMethod.Post))
                             {

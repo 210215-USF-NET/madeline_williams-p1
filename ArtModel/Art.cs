@@ -24,6 +24,7 @@ namespace ArtModel
         public string Description { get { return description; } set { description = value; } }
         public string ArtistCommentary { get { return artiststatement; } set { artiststatement = value; } }
         [Required]
+        [Url]
         public string Thumbnail { get; set; }
         public Byte[] Fullart { get; set; }
         public int MaxSeries { get; set; }

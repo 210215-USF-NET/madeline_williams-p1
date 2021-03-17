@@ -21,5 +21,6 @@ namespace ArtDL
         public Bid Save(Bid bd);
         public string GetName(int id);
         public string GetOwner(int id);
+        public decimal GetHighestBid(int id);
     }
 }

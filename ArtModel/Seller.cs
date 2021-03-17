@@ -13,6 +13,8 @@ namespace ArtModel
 
             set { _name = value; }
         }
+        [Required]
+        [EmailAddress]
         public string Email { get; set; }
     }
 }

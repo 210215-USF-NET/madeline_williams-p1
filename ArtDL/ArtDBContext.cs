@@ -36,8 +36,8 @@ namespace ArtDL
             modelBuilder.Entity<ArtistGallery>().HasNoKey().ToTable("ArtistGallery");
 
             modelBuilder.Entity<Collector>().HasData(new Collector { Id=1,Name="BidBot",Location="US",Email="fleeyourmind@hotmail.com"});
-            modelBuilder.Entity<Artist>().HasData(new Artist { Id = 1, Name = "Madeline Williams", Location = "US", Signature = "Madzy", ArtistStatement = "Art is but an illusion", Biography = "Trans artist located in seattle wa", ArtistPhoto = "" },
-            new Artist { Id = 2, Name = "cranky pants johonson", Location = "US", Signature = "Cranky Pants", ArtistStatement = "I spit on your art", Biography = "found as a baby in a junkyard on the outskirts of arkansas, Cranky Pants formed their view of the world by making beauty from ugly surroundings.", ArtistPhoto = "" },
+            modelBuilder.Entity<Artist>().HasData(new Artist { Id = 1, Name = "Madeline Williams", Location = "US", Signature = "Madzy", ArtistStatement = "Art is but an illusion", Biography = "Trans artist located in seattle wa", ArtistPhoto = "" ,Email="fleeyourmind@hotmail.com"},
+            new Artist { Id = 2, Name = "cranky pants johonson", Location = "US", Signature = "Cranky Pants", ArtistStatement = "I spit on your art", Biography = "found as a baby in a junkyard on the outskirts of arkansas, Cranky Pants formed their view of the world by making beauty from ugly surroundings.", ArtistPhoto = "",Email="fleeyourmind@gmail.com" },
             new Artist
             {
                 Id = 3,
@@ -46,7 +46,8 @@ namespace ArtDL
                 Signature = "Goo Goo",
                 ArtistStatement = "...",
                 Biography = "newborn artist googoo, smears her hand over canvas to produce expressive art peices",
-                ArtistPhoto = ""
+                ArtistPhoto = "",
+                Email="none@none.com"
             },
                         new Artist
                         {
@@ -56,7 +57,8 @@ namespace ArtDL
                             Signature = "Blue",
                             ArtistStatement = "We exist in the intersection between fields of reality and dreams, stare in awe the liminal space",
                             Biography = "Blue Heart has arted for 162 years, winner of the blue hearty grand prize 10 years in a row",
-                            ArtistPhoto = ""
+                            ArtistPhoto = "",
+                                            Email = "none@none.com"
                         },
                        new Artist
                        {
@@ -66,7 +68,8 @@ namespace ArtDL
                            Signature = "LP",
                            ArtistStatement = "Simplicity is useful, complexity divine",
                            Biography = "I'm too modest to talk about my extraordinary life",
-                           ArtistPhoto = ""
+                           ArtistPhoto = "",
+                           Email = "none@none.com"
                        },
                        new Artist
                        {
@@ -76,7 +79,8 @@ namespace ArtDL
                            Signature = "MMoo",
                            ArtistStatement = "Art is for hanging on your walls and should by pastoral",
                            Biography = "Mama Moomin is the proud mother of 13 cats and lives on a farm raising goats, which she uses as inpiration for her art",
-                           ArtistPhoto = ""
+                           ArtistPhoto = "",
+                           Email = "none@none.com"
                        });
             modelBuilder.Entity<Art>().HasData(
                 new Art { Id = 1, Name = "The Exquisite Loss of Hearing", Location = "US", ArtistCommentary = "", Description = "digital art produced by transforming the waveform of ringing bells into an abstract painting", CurrentValue = 0.00m, MaxSeries = 1, Thumbnail = "https://i.ibb.co/GRKVGkB/IMG-0586.jpg", ArtistId = 3 },

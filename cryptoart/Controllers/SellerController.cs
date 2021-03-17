@@ -125,7 +125,7 @@ namespace cryptoart.Controllers
                     int seller = (int)ses.GetInt32("id");
                     auction.SellerId = seller;
                     auction.Notify = 0;
-                    //  _repo.Save(auction);
+                    _repo.Save(auction);
                     return RedirectToAction("Gallery", "Seller");
                 }
                 else

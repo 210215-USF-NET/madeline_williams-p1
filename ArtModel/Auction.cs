@@ -12,6 +12,7 @@ namespace ArtModel
         public int SellerId { get; set; }
         public int Notify { get; set; }
         [Required]
+        [Range(0.00,1000000.00)]
         public Decimal MinimumBid { get; set; }
 
     }

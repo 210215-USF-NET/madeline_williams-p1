@@ -103,7 +103,7 @@ namespace cryptoart.Controllers
                     Da.Owned = true;
                 }
                 Da.InBid = _bl.InBid(a.Id);
-                if (Da.Owner == "")
+                if (Da.Owner == null)
                 {
                     arts.Add(Da);
                 }
