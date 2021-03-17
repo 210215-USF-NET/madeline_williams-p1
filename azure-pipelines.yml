@@ -34,23 +34,32 @@ steps:
     platform: '$(buildPlatform)'
     configuration: '$(buildConfiguration)'
 
-- task: VSTest@2
-  inputs:
-    platform: '$(buildPlatform)'
-    configuration: '$(buildConfiguration)'
-    codeCoverageEnabled: true
 
-- task: PublishTestResults@2
-  inputs:
-    testResultsFormat: 'CTest'
-    testResultsFiles: '**/TEST-*.xml'
-- task: SonarCloudAnalyze@1
- 
 - task: DotNetCoreCLI@2
+  displayName: test
   inputs:
-        command: 'publish'
-        publishWebProjects: true
-        zipAfterPublish: true
+    command: 'test'
+    projects: '**/cryptoart/Test/*.csproj'
+    arguments: --configuration $(buildConfiguration) --collect "Code Coverage"
+- task: PublishCodeCoverageResults@1
+  displayName: publish code coverage results
+  inputs:
+    codeCoverageTool: 'Cobertura'
+    summaryFileLocation: '**/coburtura/coverage.xml'
+- task: SonarCloudAnalyze@1
+  displayName: run code analysis
+
+- task: SonarCloudPublish@1
+  displayName: publish code analysis
+- task: DotNetCoreCLI@2
+  displayName: publish
+  inputs:
+    command: 'publish'
+    publishWebProjects: false
+    zipAfterPublish: true
+    projects: '**/cryptoart/*.csproj'
+
+
 - task: AzureRmWebAppDeployment@4
   inputs:
     ConnectionType: 'AzureRM'
