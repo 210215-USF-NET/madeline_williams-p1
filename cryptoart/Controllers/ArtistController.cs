@@ -41,6 +41,11 @@ namespace cryptoart.Controllers
             return View(_bl.GetArtists().ToList());
 
         }
+
+
+
+
+
         [BidWorkerFilter]
         public ActionResult Gallery()
         {
@@ -71,6 +76,44 @@ namespace cryptoart.Controllers
             return View(arts);
 
         }
+
+
+        [BidWorkerFilter]
+        public ActionResult Attach()
+        {
+            var ses = this.HttpContext.Session;
+            int artist = (int)ses.GetInt32("id");
+
+            List<SelectListItem> optionList = new List<SelectListItem>()
+            {
+
+            };
+            foreach (Seller s in _bl.GetSellers())
+            {
+                optionList.Add(new SelectListItem { Text = s.Name, Value = s.Id.ToString() });
+            }
+            ViewBag.ListItem = optionList;
+            List<decoratedArt> arts = new List<decoratedArt>();
+            foreach (Art a in _bl.GetArt(artist).ToList())
+            {
+                decoratedArt Da = new decoratedArt(a);
+                if (_bl.Owned(a.Id))
+                {
+                    Da.Owner = _bl.Owner(a.Id);
+                    Da.Owned = true;
+                }
+                Da.InBid = _bl.InBid(a.Id);
+                if (Da.Owner == "")
+                {
+                    arts.Add(Da);
+                }
+            }
+            return View(arts);
+
+        }
+
+
+
         [HttpPost]
         public ActionResult Attach(IFormCollection collection)
         {
@@ -93,6 +136,13 @@ namespace cryptoart.Controllers
             return View();
         }
 
+
+        public ActionResult FailedSubmit()
+        {
+            return View();
+        }
+
+
         [HttpPost]
         public IActionResult SaveArt(Art art, [FromServices] IArtistRepo repo)
         {
@@ -101,7 +151,10 @@ namespace cryptoart.Controllers
 
                 repo.Save(art);
             }
-
+            else
+            {
+                return RedirectToAction("failedSubmit");
+            }
           
 
             return RedirectToAction("Gallery", "Artist");

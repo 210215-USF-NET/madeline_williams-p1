@@ -16,5 +16,7 @@ namespace ArtDL
         public Auction Save(Auction auction);
         public DateTime? GetClose(int id);
         public List<Art> GetArtInAuction(int id);
+        public string GetSellerName(int id);
+        public List<Art> GetArtInCurrentAuction(int id);
     }
 }

@@ -48,6 +48,47 @@ namespace ArtDL
             }
             return auctions;
         }
+
+        public string GetArtistName(int id)
+        {
+           
+            return _context.Artists.Find(id).Name;
+        }
+        public string GetArtistEmail(int id)
+        {
+
+            return _context.Artists.Find(id).Email;
+        }
+
+        public string GetArtistEmailByArt(int id)
+        {
+            int ArtistId = _context.Arts.Find(id).ArtistId;
+
+            return _context.Artists.Find(ArtistId).Email;
+        }
+        public bool GetInBid(int id)
+        {
+            return _context.Auctions.AsNoTracking().Where(q => q.ClosingDate > DateTime.Now && q.ArtId == id).FirstOrDefault() != null;
+        }
+        public string GetOwner(int id)
+        {
+            string name = "";
+            SellerInventory si = _context.SellerInventories.Where(x => x.ArtId == id).FirstOrDefault();
+            if (si != null)
+            {
+                name = _context.Sellers.Where(x => x.Id == si.SellerId).FirstOrDefault().Name;
+            }
+            CollectorsGallery cg = _context.CollectorsGalleries.Where(x => x.ArtId == id).FirstOrDefault();
+            if (cg != null)
+            {
+                name = _context.Collectors.Where(x => x.Id == cg.CollectorId).FirstOrDefault().Name;
+            }
+
+
+            return name;
+
+        }
+
         public List<string> GetNotify(string user,int id)
         {
             List<Auction> auctions = new List<Auction>();

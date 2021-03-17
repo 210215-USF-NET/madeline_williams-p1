@@ -35,7 +35,7 @@ namespace cryptoart.viewcomponents
                 return View(articles);
             }
             else {
-                Log.Information("No User Set");
+                Log.Warning("No User Set");
                 return View();
             }
         }

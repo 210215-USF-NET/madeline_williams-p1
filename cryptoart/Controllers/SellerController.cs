@@ -32,14 +32,15 @@ namespace cryptoart.Controllers
         {
             var ses = this.HttpContext.Session;
             int seller = (int)ses.GetInt32("id");
-
+            ViewData["SellerName"] = _repo.GetSellerName(seller);
             List<decoratedArt> arts = new List<decoratedArt>();
             foreach (Art a in _repo.GetArt(seller).ToList())
             {
                 decoratedArt Da = new decoratedArt(a);
+
+                arts.Add(Da);
                 Da.InBid = _repo.InBid(a.Id);
                 Da.ClosingDate = _repo.GetClose(a.Id);
-                arts.Add(Da);
             }
             return View(arts);
 
@@ -48,22 +49,54 @@ namespace cryptoart.Controllers
         [BidWorkerFilter]
         public ActionResult Auctions()
         {
+
+
             var ses = this.HttpContext.Session;
             int seller = (int)ses.GetInt32("id");
-
-            List<decoratedArt> arts = new List<decoratedArt>();
+            ViewData["SellerName"] = _repo.GetSellerName(seller);
+            List <decoratedArt> arts = new List<decoratedArt>();
             foreach (Art a in _repo.GetArtInAuction(seller).ToList())
             {
                 decoratedArt Da = new decoratedArt(a);
                 Da.InBid = _repo.InBid(a.Id);
                 Da.ClosingDate = _repo.GetClose(a.Id);
                 arts.Add(Da);
+
             }
             return View(arts);
 
         }
 
-    
+
+
+        [BidWorkerFilter]
+        public ActionResult CurrentAuctions()
+        {
+
+
+            var ses = this.HttpContext.Session;
+            int seller = (int)ses.GetInt32("id");
+            ViewData["SellerName"] = _repo.GetSellerName(seller);
+            List<decoratedArt> arts = new List<decoratedArt>();
+            foreach (Art a in _repo.GetArtInCurrentAuction(seller).ToList())
+            {
+                decoratedArt Da = new decoratedArt(a);
+                Da.ClosingDate = _repo.GetClose(a.Id);
+                if (Da.ClosingDate > DateTime.Now)
+                {
+                    arts.Add(Da);
+                    Da.InBid = _repo.InBid(a.Id);
+                    Da.ClosingDate = _repo.GetClose(a.Id);
+                }
+                    }
+            return View(arts);
+
+        }
+
+
+
+
+
         [HttpPost]
         public ActionResult CreateAuction(IFormCollection collection)
         {

@@ -4,9 +4,11 @@
 @{
     @model List<decoratedArt>;
 }
+
+
 <div class="text-center">
-    <h1 class="display-4">Art</h1>
-    <p>Here is a list of our art.</p>
+    <h1 class="display-4"></h1>
+    <p></p>
 </div>
 
 
@@ -15,69 +17,87 @@
     ViewData["Title"] = "Art";
 }
 
-<h2>Your Art</h2>
 
 
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-              
-            </th>
-          
-            <th>
-               
-            </th>
-            <th></th><th></th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var item in Model)
-        {
-        <tr>
+@if (Model.Count == 0)
+{
+    <div class="emptymessage">
+        You Don't Have Any Art!  Contact an artist to secure some more.
+    </div>
+    <p>
+        <a asp-action="Artists" asp-route="Artist">Contact An Artist</a>
+    </p>
+}
+else
+{
 
-            <td>
-                @Html.DisplayFor(modelItem => item.Name)
-            </td>
-            <td>
 
-                <div class="display-field">
-                    <img src="@Html.DisplayFor(modelItem => item.Thumbnail)" alt="@Html.DisplayFor(modelItem => item.Name)" />
-                </div>
-                <div class="display-field">
-                    @if (item.InBid)
-                    {
-                      
-                    <span>Current Bid</span> 
+
+
+    <h2>Your Art</h2>
+
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+
+                </th>
+
+                <th>
+
+                </th>
+                <th></th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Name)
+                    </td>
+                    <td>
+
+                        <div class="display-field">
+                            <img src="@Html.DisplayFor(modelItem => item.Thumbnail)" alt="@Html.DisplayFor(modelItem => item.Name)" />
+                        </div>
+                        <div class="display-field">
+                            @if (item.InBid)
+                            {
+
+                                <span>Current Bid</span>
                             }
                             else
                             {
-                <span>Current Value</span>
-                                }
-                                $
-                                @Html.DisplayFor(modelItem => item.CurrentValue)
-
-                            </div>
-                            @if (!item.InBid)
-                            {
-                                @using (Html.BeginForm("CreateAuction", "Seller", FormMethod.Post))
-                                {
-                                    <input type="hidden" name="ArtName" value="@Html.DisplayFor(modelItem => item.Name)" />
-                                    <input type="hidden" name="ArtId" value="@Html.DisplayFor(modelItem => item.Id)" />
-                                    <input type="submit" value="Create an auction" />
-                                }
+                                <span>Current Value</span>
                             }
-                            else
+                            $
+                            @Html.DisplayFor(modelItem => item.CurrentValue)
+
+                        </div>
+                        @if (!item.InBid || item.Owner!=ViewData["SellerName"].ToString())
+                        {
+                            @using (Html.BeginForm("CreateAuction", "Seller", FormMethod.Post))
                             {
-                                <span>Your Auction for this Item Closes</span>  @Html.DisplayFor(modelItem => item.ClosingDate)
+                                <input type="hidden" name="ArtName" value="@Html.DisplayFor(modelItem => item.Name)" />
+                                <input type="hidden" name="ArtId" value="@Html.DisplayFor(modelItem => item.Id)" />
+                                <input type="submit" value="Create an auction" />
                             }
+                        }
+                        else
+                        {
+                            <span>Your Auction for this Item Closes</span> @Html.DisplayFor(modelItem => item.ClosingDate)
+                        }
 
 
-</td>
-            <td>
-                 
-</td>
-        </tr>
-        }
+                    </td>
+                    <td>
+                    </td>
+                </tr>
+            }
         </tbody>
-</table>
+    </table>
+}

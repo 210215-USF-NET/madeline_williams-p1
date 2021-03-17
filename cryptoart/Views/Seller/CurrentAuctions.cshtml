@@ -5,14 +5,24 @@
     @model List<decoratedArt>;
 }
 
+
+
+
 @{
-    ViewData["Title"] = "Auctions";
+    ViewData["Title"] = "Art";
 }
-
-<h2>Your Auctions</h2>
-
-
-
+@if (Model.Count == 0)
+{
+    <div class="emptymessage">
+        You Don't Have Any Current Auctions!
+    </div>
+    <p>
+        @Html.ActionLink("Create An Auction", "Gallery", "Seller", Model)
+    </p>
+}
+else
+{
+    <h2>Your Current Auctions</h2>
 
 
     <table class="table">
@@ -43,14 +53,12 @@
                             <img src="@Html.DisplayFor(modelItem => item.Thumbnail)" alt="@Html.DisplayFor(modelItem => item.Name)" />
                         </div>
                         <div class="display-field">
-                            @if (item.ClosingDate < DateTime.Now)
-                            {
-                                <span>This art sold for</span>
+                            @if (item.ClosingDate < DateTime.Now) {
+                            <span>This art sold for</span>
                             }
-                            else
-                            {
-                                <span>Current Bid:</span>
-                            }
+                            else {
+                        <span>Current Bid:</span>
+                                }
                             $ @Html.DisplayFor(modelItem => item.CurrentValue)
                         </div>
                         @if (item.ClosingDate < DateTime.Now)
@@ -68,3 +76,4 @@
             }
         </tbody>
     </table>
+}

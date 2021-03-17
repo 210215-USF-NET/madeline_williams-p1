@@ -20,14 +20,20 @@ namespace ArtDL
 
             return _context.Sellers.ToList();
         }
+        public string GetSellerName(int id)
+        {
 
+
+
+                return _context.Sellers.Where(x=>x.Id==id).FirstOrDefault().Name;
+        }
         public Seller GetUser(int id)
         {
            return _context.Sellers.AsNoTracking().Where(x => x.Id == id).FirstOrDefault();
         }
         public DateTime? GetClose(int id)
         {
-            Auction au= _context.Auctions.Where(x => x.ArtId == id && x.ClosingDate > DateTime.Now).FirstOrDefault();
+            Auction au= _context.Auctions.Where(x => x.ArtId == id).FirstOrDefault();
             if (au != null)
             {
                 return au.ClosingDate;
@@ -58,6 +64,25 @@ namespace ArtDL
 
         }
 
+        public List<Art> GetArtInCurrentAuction(int id)
+        {
+            List<Art> arts = new List<Art>();
+            List<Auction> si = _context.Auctions.Where(x => x.SellerId == id).ToList();
+            if (si == null)
+            {
+                return arts;
+            }
+            foreach (Auction s in si)
+            {
+                Art art = _context.Arts.Where(x => x.Id == s.ArtId&&s.ClosingDate>DateTime.Now).FirstOrDefault();
+                if (art != null)
+                {
+                    arts.Add(art);
+                }
+            }
+            return arts;
+
+        }
 
 
         public List<Art> GetArt(int id)

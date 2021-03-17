@@ -6,20 +6,14 @@
 }
 <div class="text-center">
     <h1 class="display-4">Artists</h1>
-    <p>Here are a list of our artists.</p>
+    <p>Learn More About Our Contributing Artists and View Their Work</p>
 </div>
 
 
 
 @{
-    ViewData["Title"] = "Login";
+    ViewData["Title"] = "Artists";
 }
-
-<h2>Index</h2>
-
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
 <table class="table">
     <thead>
         <tr>
@@ -47,7 +41,7 @@
                     @Html.DisplayFor(modelItem => item.ArtistStatement)
                 </td>
                 <td>
-                    @Html.ActionLink("Gallery", "Gallery","Art", new { id = item.Id }) |
+                    @Html.ActionLink("Gallery", "Gallery","Art", new { id = item.Id })
                 </td>
             </tr>
         }

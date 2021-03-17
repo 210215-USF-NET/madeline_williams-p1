@@ -1,11 +1,10 @@
 ﻿
 
 @{
-    @model List<ArtModel.Art>
+    @model List<decoratedArt>
 }
 <div class="text-center">
-    <h1 class="display-4">Artists</h1>
-    <p>Here are a list of our artists.</p>
+    <h1 class="display-4">Art By @ViewData["ArtistName"]</h1>
 </div>
 
 
@@ -14,46 +13,44 @@
     ViewData["Title"] = "Arts";
 }
 
-<h2>Index</h2>
+<h2>Sort By   @Html.ActionLink("Current Value", "value", "Art", new { id = ViewData["ArtistId"] }) |  @Html.ActionLink("Name", "name", "Art", new { id = ViewData["ArtistId"] })  |  @Html.ActionLink("Owner", "owner", "Art", new { id = ViewData["ArtistId"] })</h2>
 
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                Title
-            </th>
+<div>
 
-            <th>
-                Thumb
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
+    @foreach (var item in Model)
+    {
 
-        @foreach (var item in Model)
-            {
-        <tr>
+        <span>
+            @Html.DisplayFor(modelItem => item.Name)
+        </span>
+        <span>
+            @Html.DisplayFor(modelItem => item.CurrentValue)
+        </span>
+       @if (item.Owner != "")
+       {
+        <span>
+            Owned By : @Html.DisplayFor(modelItem => item.Owner)
+        </span>
+       }
+        <div>
 
-            <td>
-                @Html.DisplayFor(modelItem => item.Name)
-            </td>
-            <td>
-
-                <div class="display-field">
-                    <img src="@Html.DisplayFor(modelItem => item.Thumbnail)" alt="@Html.DisplayFor(modelItem => item.Name)" />
-                </div>
-            </td>
-            @if (Context.Session.GetString("user")=="collector"){
-            <td>
+            <div class="display-field">
+                <img src="@Html.DisplayFor(modelItem => item.Thumbnail)" alt="@Html.DisplayFor(modelItem => item.Name)" />
+            </div>
+        </div>
+        @if (Context.Session.GetString("user") == "collector" && item.InBid)
+        {
+            <div>
                 @Html.ActionLink("Bid", "", new { id = item.Id })
-            </td>
-                }
-        </tr>
-            }
+            </div>
+        }
+        @if (Context.Session.GetString("user") == "seller" && item.Owner=="")
+        {
+            <div>
+                @Html.ActionLink("Contact " + @ViewData["ArtistName"] + " about adding This piece to your Inventory", "Contact", new { id = item.Id})
+            </div>
+        }
 
-    </tbody>
-</table>
+    }
+</div>
+<hr />

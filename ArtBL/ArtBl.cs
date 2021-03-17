@@ -21,10 +21,27 @@ namespace auctionBL
         {
             return _repo.GetAll();
         }
-
+        public string GetArtistName(int id)
+        {
+           return _repo.GetArtistName(id); 
+        }
+        public string GetArtistEmail(int id)
+        {
+            return _repo.GetArtistEmail(id);
+        }
         public List<Art> GetArtByArtist(int id)
         {
             return GetArt().Where(x => x.ArtistId==id).ToList();
         }
+
+        public bool GetInBid(int id)
+        {
+            return _repo.GetInBid(id);
+        }
+        public string GetOwner(int id)
+        {
+            return _repo.GetOwner(id);
+        }
+
     }
 }
