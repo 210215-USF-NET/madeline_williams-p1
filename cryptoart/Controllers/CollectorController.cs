@@ -82,6 +82,7 @@ namespace cryptoart.Controllers
             {
                 decoratedArtCollector Da = new decoratedArtCollector(a);
                 Da.ClosingDate = _repo.GetClosingForArt(a.Id);
+                Da.Owner = _repo.GetOwner(a.Id);
                 arts.Add(Da);
             }
 
@@ -95,7 +96,7 @@ namespace cryptoart.Controllers
                     art.CollectorsBid = b.Amount;
                 }
             }
-
+            ViewData["CollectorName"] = _repo.GetName(collector);
             return View(arts);
         }
 

@@ -30,8 +30,25 @@ namespace ArtDL
         {
             return _context.Collectors.AsNoTracking().Where(x => x.Name.ToLower() == name.ToLower()).FirstOrDefault();
         }
+        public string GetName(int id)
+        {
+            return _context.Collectors.Find(id).Name;
+        }
+        public string GetOwner(int id)
+        {
+
+            string name = "";
+           
+            CollectorsGallery cg = _context.CollectorsGalleries.Where(x => x.ArtId == id).FirstOrDefault();
+            if (cg != null)
+            {
+                name = _context.Collectors.Where(x => x.Id == cg.CollectorId).FirstOrDefault().Name;
+            }
 
 
+            return name;
+
+        }
         public List<Art> GetArt(int id)
         {
             List<Art> arts = new List<Art>();

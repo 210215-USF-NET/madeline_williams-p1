@@ -1,89 +1,103 @@
 ﻿@model List<decoratedArtCollector>
 @{
 }
-<div class="text-center">
-    <h1 class="display-4">Art</h1>
-    <p>Here is a list of our art.</p>
-</div>
 
 
 
 @{
-    ViewData["Title"] = "Art";
+    ViewData["Title"] = "Bids";
 }
 
-<h2>Your Bids</h2>
+@if (Model.Count == 0)
+{
+    <div class="emptymessage">
+        You Don't Have Any Bidding History! Start bidding to build your collection!
+    </div>
+    <p>
+        @Html.ActionLink("View Auctions", "ViewAuctions", "Collector", Model)
+    </p>
+}
+else
+{
+    <h2>Your Bids</h2>
 
 
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-
-            </th>
-
-            <th>
-
-            </th>
-            <th></th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var item in Model)
-        {
+    <table class="table">
+        <thead>
             <tr>
+                <th>
 
-                <td>
-                    @Html.DisplayFor(modelItem => item.Name)
-                </td>
-                <td>
+                </th>
 
-                    <div class="display-field">
-                        <img src="@Html.DisplayFor(modelItem => item.Thumbnail)" alt="@Html.DisplayFor(modelItem => item.Name)" />
-                    </div>
-                    <div class="display-field">
-                        @if (item.CollectorsBid > 0.00m)
+                <th>
+
+                </th>
+                <th></th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Name)
+                    </td>
+                    <td>
+                        @if (item.ClosingDate<DateTime.Now && item.Owner!=ViewData["CollectorName"].ToString())
                         {
-
-                            <span>Your High Bid</span>
-                            <span>$  @item.CollectorsBid.ToString()</span>
+                            <span>this Auction Has Closed. You did not win</span>
                         }
-
-                        <span>Current High Bid</span>
-
-                        $
-                        @Html.DisplayFor(modelItem => item.CurrentValue)
-                        @if (item.ClosingDate > DateTime.Now)
-                        {
-                            @if (item.CollectorsBid == item.CurrentValue)
-                            {
-                                <div>Congratulations, You are the Currently highest bidder</div>
-                            }
-
-
-                            @using (Html.BeginForm("Bid", "Collector", FormMethod.Post))
-                            {
-                                <input type="hidden" name="ArtName" value="@Html.DisplayFor(modelItem => item.Name)" />
-                                <input type="hidden" name="ArtId" value="@Html.DisplayFor(modelItem => item.Id)" />
-                                <input type="submit" value="Bid On This Art" />
-                            }
-
-                            <span>This Auction Closes</span> @Html.DisplayFor(modelItem => item.ClosingDate)
+                        else {
+                        <div class="display-field">
+                            <img src="@Html.DisplayFor(modelItem => item.Thumbnail)" alt="@Html.DisplayFor(modelItem => item.Name)" />
+                        </div>
                         }
-                        else
-                        {
+                        <div class="display-field">
+                            @if (item.CollectorsBid > 0.00m)
+                            {
 
-                            <span>This Auction is Closed</span>
-                            @if (item.CollectorsBid == item.CurrentValue) { 
-                            <div>Congratulations on your winning Bid</div>
+                                <span>Your High Bid</span>
+                                <span>$  @item.CollectorsBid.ToString()</span>
                             }
-}
-                    </div>
+
+                            <span>Current High Bid</span>
+
+                            $
+                            @Html.DisplayFor(modelItem => item.CurrentValue)
+                            @if (item.ClosingDate > DateTime.Now)
+                            {
+                                @if (item.CollectorsBid == item.CurrentValue)
+                                {
+                                    <div>Congratulations, You are the Currently highest bidder</div>
+                                }
+
+
+                                @using (Html.BeginForm("Bid", "Collector", FormMethod.Post))
+                                {
+                                    <input type="hidden" name="ArtName" value="@Html.DisplayFor(modelItem => item.Name)" />
+                                    <input type="hidden" name="ArtId" value="@Html.DisplayFor(modelItem => item.Id)" />
+                                    <input type="submit" value="Bid On This Art" />
+                                }
+
+                                <span>This Auction Closes</span> @Html.DisplayFor(modelItem => item.ClosingDate)
+                            }
+                            else
+                            {
+
+                                <span>This Auction is Closed</span>
+                                @if (item.CollectorsBid == item.CurrentValue)
+                                {
+                                    <div>Congratulations on your winning Bid</div>
+                                }
+                            }
+                        </div>
                     </td>
                     <td>
                     </td>
                 </tr>
             }
-    </tbody>
-</table>
+        </tbody>
+    </table>
+}

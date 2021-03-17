@@ -19,5 +19,7 @@ namespace ArtDL
         public DateTime GetClosingForArt(int id);
         public int GetAuction(int id);
         public Bid Save(Bid bd);
+        public string GetName(int id);
+        public string GetOwner(int id);
     }
 }

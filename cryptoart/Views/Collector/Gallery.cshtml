@@ -4,57 +4,64 @@
 @{
     @model List<decoratedArt>;
 }
-<div class="text-center">
-    <h1 class="display-4">Art</h1>
-    <p>Your Art</p>
-</div>
-
-
 
 @{
     ViewData["Title"] = "Art";
 }
+@if (Model.Count == 0)
+{
+    <div class="emptymessage">
+        You Don't Have Any Art in your collection! Start bidding to build your collection!
+    </div>
+    <p>
+        @Html.ActionLink("View Auctions", "ViewAuctions", "Collector", Model)
+    </p>
+}
+else
+{
 
-<h2>In Your Collection</h2>
 
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-              
-            </th>
-          
-            <th>
-               
-            </th>
-            <th></th><th></th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var item in Model)
-        {
-        <tr>
 
-            <td>
-                @Html.DisplayFor(modelItem => item.Name)
-            </td>
-            <td>
+    <h2>In Your Collection</h2>
 
-                <div class="display-field">
-                    <img src="@Html.DisplayFor(modelItem => item.Thumbnail)" alt="@Html.DisplayFor(modelItem => item.Name)" />
-                </div>
-                <div class="display-field">
-                    Current Value:
-                    $ @Html.DisplayFor(modelItem => item.CurrentValue)
-                </div>
-             
-              
-            </td>
-            <td>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
 
-            
-</td>
-        </tr>
-        }
+                </th>
+
+                <th>
+
+                </th>
+                <th></th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Name)
+                    </td>
+                    <td>
+
+                        <div class="display-field">
+                            <img src="@Html.DisplayFor(modelItem => item.Thumbnail)" alt="@Html.DisplayFor(modelItem => item.Name)" />
+                        </div>
+                        <div class="display-field">
+                            Current Value:
+                            $ @Html.DisplayFor(modelItem => item.CurrentValue)
+                        </div>
+
+
+                    </td>
+                    <td>
+                    </td>
+                </tr>
+            }
         </tbody>
-</table>
+    </table>
+}
