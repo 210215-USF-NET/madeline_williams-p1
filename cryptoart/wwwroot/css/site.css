@@ -63,8 +63,24 @@ html {
 }
 
 body {
-  /* Margin bottom by footer height */
-  margin-bottom: 60px;
+    /* Margin bottom by footer height */
+    margin-bottom: 60px;
+    background-color: #98343e;
+    color: #212529;
+    font-family: blair;
+}
+.art {
+    border-style: groove;
+    border-width:3px;
+    text-align:center;
+    margin:5px;
+    padding:3px;
+    border-color:darkslategrey;
+}
+img {
+    border-width:2px;
+    border-style:double;
+    border-color:black;
 }
 .footer {
   position: absolute;
@@ -72,4 +88,44 @@ body {
   width: 100%;
   white-space: nowrap;
   line-height: 60px; /* Vertically center the text there */
+}
+a{color:antiquewhite;}
+a:hover{color:white;}
+@font-face {
+    font-family: 'SyneMono-Regular';
+    src: url('../font/SyneMono-Regular.ttf') format('truetype');
+}
+.artdesc {
+    font-family: 'SyneMono-Regular';
+    font-weight: bold;
+}
+.navbar{
+    background:black;
+    color:crimson;
+}
+
+input {
+    background-image: linear-gradient(to bottom right, #3e0a0a, #9f4ca5);
+    font-family: 'SyneMono-Regular';
+    font-weight: bold;
+}
+
+select,input[type=submit],option {
+    background-image: linear-gradient(to bottom right, #9f4ca5, #f8c5c5);
+    font-family: 'SyneMono-Regular';
+    font-weight: bold;
+}
+
+.notify {
+    color: #f4ff00;
+    background-color: darkred;
+    border-style: outset;
+    border-width: thick;
+    text-align: center;
+    margin: 5px;
+    padding: 10px;
+    font-family: Orbitron;
+
+    text-shadow: -6px 7px 12px black;
+ 
 }

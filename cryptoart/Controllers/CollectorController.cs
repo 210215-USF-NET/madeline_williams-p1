@@ -137,5 +137,12 @@ namespace cryptoart.Controllers
             return RedirectToAction("FailedBid", "Collector");
         }
 
+        public ActionResult FailedBid()
+        {
+            
+            return View();
+        }
+
+
     }
 }

@@ -24,9 +24,12 @@ namespace ArtDL
 
         public List<Auction> Maintain() 
         {
-            List<Auction> auctions = _context.Auctions.Where(x => DateTime.Now > x.ClosingDate && x.Notify == 0).ToList();
+            DateTime testingDate = DateTime.Now;
+            List<Auction> auctions = _context.Auctions.Where(x => (testingDate.CompareTo(x.ClosingDate)>0) && (x.Notify &1)== 0).ToList();
             foreach (Auction a in auctions)
             {
+                Log.Information("now greater than closing");
+                Log.CloseAndFlush();
                 SellerInventory si = _context.SellerInventories.Where(x => x.ArtId == a.ArtId).FirstOrDefault();
                 if (si != null)
                 {
@@ -99,6 +102,7 @@ namespace ArtDL
             {
                 case "collector":
                     auctions = _context.Auctions.Where(x => DateTime.Now > x.ClosingDate && (x.Notify & 2) == 0).ToList();
+
                     checkbit = 2;
                     flavor = "Congratulations! You Won ";
                     break;
@@ -109,6 +113,7 @@ namespace ArtDL
                     break;
                 case "seller":
                     auctions = _context.Auctions.Where(x => DateTime.Now > x.ClosingDate && (x.Notify &  8)==0 && x.SellerId==id).ToList();
+
                     checkbit = 8;
                     flavor = "Congratulations! Your auction ";
                     break;
@@ -118,6 +123,8 @@ namespace ArtDL
             }
             foreach (Auction a in auctions)
             {
+                Log.Information(DateTime.Now.ToString() + " " + a.ClosingDate.ToString() + "   " + (DateTime.Now > a.ClosingDate).ToString());
+                Log.CloseAndFlush();
                 string art = "";
                 string closingBid = "";
                
@@ -127,10 +134,10 @@ namespace ArtDL
                     art = at.Name;
                     closingBid = at.CurrentValue.ToString();
                 }
-              
-                 
 
-                if ((checkbit == 4 && at.ArtistId == id)|| checkbit==8 || (checkbit==2&& _context.Bids.Where(x => x.CollectorId == id && x.Amount == at.CurrentValue).FirstOrDefault()!=null))
+                DateTime d = DateTime.Now;
+                bool cd = d.CompareTo(a.ClosingDate) > 0;
+                if (cd&&((checkbit == 4 && at.ArtistId == id)|| checkbit==8 || (checkbit==2&& _context.Bids.Where(x => x.CollectorId == id && x.Amount == at.CurrentValue).FirstOrDefault()!=null)))
                 {
                     Log.Information("adding art " + a.ArtId + "to notification list");
                     notifyList.Add(flavor + art + " sold for " + closingBid);

@@ -74,7 +74,8 @@ namespace ArtDL
             }
             foreach (Auction s in si)
             {
-                Art art = _context.Arts.Where(x => x.Id == s.ArtId&&s.ClosingDate>DateTime.Now).FirstOrDefault();
+                DateTime d = DateTime.Now;
+                Art art = _context.Arts.Where(x => x.Id == s.ArtId&&d.CompareTo(s.ClosingDate)<0).FirstOrDefault();
                 if (art != null)
                 {
                     arts.Add(art);
@@ -103,8 +104,8 @@ namespace ArtDL
 
         public bool InBid(int id)
         {
-
-            return _context.Auctions.Where(q => q.ClosingDate > DateTime.Now && q.ArtId == id).FirstOrDefault() != null;
+            DateTime d = DateTime.Now;
+            return _context.Auctions.Where(q => (DateTime.Compare(q.ClosingDate,d) > 0 )&& q.ArtId == id).FirstOrDefault() != null;
         }
 
 

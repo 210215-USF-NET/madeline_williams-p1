@@ -1,4 +1,7 @@
-﻿
+﻿@{
+    ViewData["rnd"]=new Random().Next(0,100000);
+    
+    }
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,11 +9,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - On Scarcity</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="~/css/site.css" />
+    <link rel="stylesheet" href="~/css/site.css?@ViewData["rnd"]" />
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark bg-dark border-bottom box-shadow mb-3">
             <div class="container">
                 <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">cryptoart</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
@@ -20,51 +23,51 @@
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                            <a class="nav-link text-light" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Artist" asp-action="Artists">Artists</a>
+                            <a class="nav-link text-light" asp-area="" asp-controller="Artist" asp-action="Artists">Artists</a>
                         </li>
                         @if (Context.Session.GetString("user") == "seller" && ViewContext.RouteData.Values["controller"].ToString() != "Login")
                         {
                             <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="" asp-controller="Seller" asp-action="Gallery">Create Auction</a>
+                                <a class="nav-link text-light" asp-area="" asp-controller="Seller" asp-action="Gallery">Create Auction</a>
                             </li>
 
                             <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="" asp-controller="Seller" asp-action="Gallery">View Inventory</a>
+                                <a class="nav-link text-light" asp-area="" asp-controller="Seller" asp-action="Gallery">View Inventory</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="" asp-controller="Seller" asp-action="Auctions">View Auctions</a>
+                                <a class="nav-link text-light" asp-area="" asp-controller="Seller" asp-action="Auctions">View Auctions</a>
 
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="" asp-controller="Seller" asp-action="CurrentAuctions">View Current Auctions</a>
+                                <a class="nav-link text-light" asp-area="" asp-controller="Seller" asp-action="CurrentAuctions">View Current Auctions</a>
                             </li>
-                            
-                                    }
+
+                        }
                         @if (Context.Session.GetString("user") == "collector" && ViewContext.RouteData.Values["controller"].ToString() != "Login")
                         {
                             <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="" asp-controller="Collector" asp-action="Gallery">View Collection</a>
+                                <a class="nav-link text-light" asp-area="" asp-controller="Collector" asp-action="Gallery">View Collection</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="" asp-controller="Collector" asp-action="ViewBids">View Bids</a>
+                                <a class="nav-link text-light" asp-area="" asp-controller="Collector" asp-action="ViewBids">View Bids</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="" asp-controller="Collector" asp-action="ViewAuctions">View Auctions</a>
+                                <a class="nav-link text-light" asp-area="" asp-controller="Collector" asp-action="ViewAuctions">View Auctions</a>
                             </li>
                         }
                         @if (Context.Session.GetString("user") == "artist" && ViewContext.RouteData.Values["controller"].ToString() != "Login")
                         {
                             <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="" asp-controller="Artist" asp-action="Gallery">View Gallery</a>
+                                <a class="nav-link text-light" asp-area="" asp-controller="Artist" asp-action="Gallery">View Gallery</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="" asp-controller="Artist" asp-action="Attach">Attach To Seller</a>
+                                <a class="nav-link text-light" asp-area="" asp-controller="Artist" asp-action="Attach">Attach To Seller</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="" asp-controller="Artist" asp-action="Submit">Submit Art</a>
+                                <a class="nav-link text-light" asp-area="" asp-controller="Artist" asp-action="Submit">Submit Art</a>
                             </li>
                         }
                     </ul>
@@ -72,27 +75,27 @@
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between float-right">
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-link float-right">
-                        <a class="nav-item" asp-area="" asp-controller="Login" asp-action="Login">LOGIN</a>
-</li>
+                            <a class="nav-item" asp-area="" asp-controller="Login" asp-action="Login">LOGIN</a>
+                        </li>
                     </ul>
                 </div>
-</nav>
+        </nav>
     </header>
     <div class="container">
         <main role="main" class="pb-3">
             <div>
                 @{
                     @await Component.InvokeAsync("Notify");
-                 }
-                </div>
+                }
+            </div>
             @RenderBody()
 
         </main>
     </div>
 
-    <footer class="border-top footer text-muted">
+    <footer class="border-top footer text-light">
         <div class="container">
-            &copy; 2021 - cryptoart - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+            &copy; 2021 - scarcity - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
         </div>
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>

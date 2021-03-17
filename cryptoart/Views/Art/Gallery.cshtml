@@ -19,19 +19,19 @@
 
     @foreach (var item in Model)
     {
-
+    <div class="art artdesc">
         <span>
             @Html.DisplayFor(modelItem => item.Name)
         </span>
         <span>
             @Html.DisplayFor(modelItem => item.CurrentValue)
         </span>
-       @if (item.Owner != "")
-       {
-        <span>
-            Owned By : @Html.DisplayFor(modelItem => item.Owner)
-        </span>
-       }
+        @if (item.Owner != "")
+        {
+            <span>
+                Owned By : @Html.DisplayFor(modelItem => item.Owner)
+            </span>
+        }
         <div>
 
             <div class="display-field">
@@ -40,17 +40,22 @@
         </div>
         @if (Context.Session.GetString("user") == "collector" && item.InBid)
         {
-            <div>
-                @Html.ActionLink("Bid", "", new { id = item.Id })
-            </div>
+    <div>
+        @using (Html.BeginForm("MakeBid", "Collector", FormMethod.Post))
+        {
+            <input type="hidden" name="ArtName" value="@Html.DisplayFor(modelItem => item.Name)" />
+            <input type="hidden" name="ArtId" value="@Html.DisplayFor(modelItem => item.Id)" />
+            <input type="submit" value="Bid On This Art" />
         }
-        @if (Context.Session.GetString("user") == "seller" && item.Owner=="")
+    </div>
+        }
+        @if (Context.Session.GetString("user") == "seller" && item.Owner == "")
         {
             <div>
-                @Html.ActionLink("Contact " + @ViewData["ArtistName"] + " about adding This piece to your Inventory", "Contact", new { id = item.Id})
+                @Html.ActionLink("Contact " + @ViewData["ArtistName"] + " about adding This piece to your Inventory", "Contact", new { id = item.Id })
             </div>
         }
-
-    }
-</div>
+        </div>
+        }
+    </div>
 <hr />

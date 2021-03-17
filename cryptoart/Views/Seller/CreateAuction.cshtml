@@ -14,7 +14,6 @@ Create an Auction for @TempData["Name"]
     <div class="form-group">
         <label asp-for="ClosingDate" class="control-label"></label>
         <input asp-for="ClosingDate" class="form-control" />
-        @Html.ValidationMessageFor(model => model.ClosingDate, "", new { @class = "text-danger" })
     </div>
 
     <input type="hidden" asp-for="ArtId" name="ArtId" value="@TempData["ArtId"]" />
@@ -22,6 +21,3 @@ Create an Auction for @TempData["Name"]
 
 }
 
-@section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
-}

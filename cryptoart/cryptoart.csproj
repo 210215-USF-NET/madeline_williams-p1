@@ -33,4 +33,9 @@
     <ProjectReference Include="..\ArtModel\ArtModel.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="wwwroot\img\" />
+    <Folder Include="wwwroot\font\" />
+  </ItemGroup>
+
 </Project>

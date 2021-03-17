@@ -37,10 +37,12 @@ namespace cryptoart.Controllers
             foreach (Art a in _repo.GetArt(seller).ToList())
             {
                 decoratedArt Da = new decoratedArt(a);
-
-                arts.Add(Da);
-                Da.InBid = _repo.InBid(a.Id);
                 Da.ClosingDate = _repo.GetClose(a.Id);
+
+                Da.InBid = _repo.InBid(a.Id);
+                arts.Add(Da);
+               
+              
             }
             return View(arts);
 
@@ -82,11 +84,14 @@ namespace cryptoart.Controllers
             {
                 decoratedArt Da = new decoratedArt(a);
                 Da.ClosingDate = _repo.GetClose(a.Id);
-                if (Da.ClosingDate > DateTime.Now)
+                DateTime d = DateTime.Now;
+               
+                if (d.CompareTo(Da.ClosingDate) < 0)
                 {
+                   
+                    Da.InBid = true;
+                   
                     arts.Add(Da);
-                    Da.InBid = _repo.InBid(a.Id);
-                    Da.ClosingDate = _repo.GetClose(a.Id);
                 }
                     }
             return View(arts);
@@ -119,7 +124,7 @@ namespace cryptoart.Controllers
         {
             if (ModelState.IsValid)
             {
-                if (auction.ClosingDate > DateTime.Now.AddMinutes(5))
+                if (auction.ClosingDate > DateTime.Now.AddMinutes(2))
                 {
                     var ses = this.HttpContext.Session;
                     int seller = (int)ses.GetInt32("id");

@@ -25,7 +25,7 @@
         You Don't Have Any Art!  Contact an artist to secure some more.
     </div>
     <p>
-        <a asp-action="Artists" asp-route="Artist">Contact An Artist</a>
+        <a asp-controller="Artist" asp-action="Artists">Contact An Artist</a>
     </p>
 }
 else
@@ -54,7 +54,7 @@ else
         <tbody>
             @foreach (var item in Model)
             {
-                <tr>
+                <tr class="artdesc">
 
                     <td>
                         @Html.DisplayFor(modelItem => item.Name)
