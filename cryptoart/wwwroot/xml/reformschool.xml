@@ -1,0 +1,1447 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<FinalDraft DocumentType="Script" Template="No" Version="1">
+  <Content>
+    <Paragraph Type="Scene Heading">
+      <Text>COLATZ CITY-EXT. DAY</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>A giant space station (colatz city) colorfully neon, but infused with asteroids like Battlestar Galatica classic, flys through the outer realms. Little ships dock and launch at a consistent rate. A huge trail of garbage is left to drift in its wake.</Text>
+    </Paragraph>
+    <Paragraph Type="Scene Heading">
+      <Text>TOURISTS SPACE SHIP - INT. DAY</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>NONDESCRIPT HUMAN DAD is driving agressively while NONDESCRIPT HUMAN MOM is examining pamplets. NONDESCRIPT HUMAN TEEN BOY is kicking the backseat with arms crossed bored AF, NONDESCRIPT HUMAN TEEN GIRL is staring wild eyed at colatz city as it comes into view</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>NONDESCRIPT HUMAN DAD</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>Who taught you how to fly?!! Stay on your own vector, moron!</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>KL'EO's SHIP approachs rapidly from behind</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>NONDESCRIPT HUMAN MOM</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>I don't understand why you get so worked up, we're on vacation. It's time to relax. (points at pamplet) Aren't you excited to see the Great Time Melt? Oh and the Calming Stones of Juloth N'or exhibit has been extended to next week!</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>NONDESCRIPT HUMAN TEEN BOY</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>What is the point of looking at a bunch of booring rocks?</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>KL'EO's SHIP is bumper to bumper with Tourist Space Ship, The ships lights Intensify like high beams, and a loud honking sound is heard from behind.</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>NONDESCRIPT HUMAN DAD</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>There's literraly an infinite amout of space around us! What's your GooBop Sungly Problem! </Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>  NONDESCRIPT HUMAN MOM</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>Just move over and let them pass!</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>NONDESCRIPT HUMAN DAD</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>I'm trying!</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>KL'EO's Ship rams into Tourist Space Ship. We see KL'EO has a wild malevolent look in her eyes as YAWG WHA freaks out in terror next to her through the driver's side window.</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>NONDESCRIPT HUMAN TEEN GIRL</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>Dad! You're being Reckless!</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>NONDESCRIPT HUMAN DAD</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>I Swear, Penelope, I will go back and strangle you if you don't shut up!</Text>
+    </Paragraph>
+    <Paragraph Type="Parenthetical">
+      <Text>(his grip on the wheel is intense)</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>What's up with this jerk!</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>KL'Eo's Ship rams Tourist Space Ship once more and it veers off course, straight into the garbage trail left by Colatz City. They land on a big blobby piece of garbage and the ship stalls. KL'Eo and Yawg Wah give each other high fives as they begin to dock at Colatz city. Before they can dock, a giant blob of nano goo engulfs the ship and pulls it into a waiting security cruiser.</Text>
+    </Paragraph>
+    <Paragraph Type="Transition">
+      <Text>DISSOLVE TO:</Text>
+    </Paragraph>
+    <Paragraph Type="Scene Heading">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Scene Heading">
+      <Text>COLATZ STONE MUSEUM- INT. DAY</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>We see An elaborate museum filled with famous stones throughout the universe. Moai Statues and olmec heads can be recognized along with weird alien stones. NONDESCRIPT HUMAN Mom is leading NONDESCRIPT HUMAN family into the museum. NONDESCRIPT HUMAN dad is in a foul mood and the children look bored. </Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>NONDESCRIPT HUMAN MOM</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>It says here that the calming stones unique calming properties stem from their constant vibration at 1,319.46hz.</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <ScriptNote ID="1">
+        <Paragraph>
+          <Text>That's 420 x pi : not going to invest in a full sphere equation that would be crazy...</Text>
+        </Paragraph>
+      </ScriptNote>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>NONDESCRIPT HUMAN DAD</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>(under his breath) A bunch of Hippy rocks.</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>NONDESCRIPT HUMAN TEEN GIRL</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>Ohhh these are so pretty, Can I take one home, mom, please.</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>NONDESCRIPT HUMAN TEEN BOY</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>These rocks aren't for sale, stupid.</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>NONDESCRIPT HUMAN teen girl punches teen boy in the stomache, visibly winding him</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>NONDESCRIPT HUMAN TEEN GIRL</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>I was merely suggesting we liberate the pretty, shiny, precious from the bonds of captivity, Doofus!</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>NONDESCRIPT HUMAN DAD</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>(Groaning) Who is the literal idiot that decided to put the babble stone in a babbling brook filled with babblefish.</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>NONDESCRIPT HUMAN MOM</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>You could at least try to enjoy yourself, and (to teen girl) NO you may NOT liberate anything on this trip.</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>MUSEUM GUARD</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>We've got some potential pick pockets here, Shadowing the perps</Text>
+    </Paragraph>
+    <Paragraph Type="Parenthetical">
+      <Text>(into walky talky)</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>Are you lost? I can show you to the exit.</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>An Alarm is heard and lights start flashing.</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>MUSEUM GUARD</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>I knew it. Apprehending the perps now!</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>Museum Guard pulls out a tazer which engulfs Sterotypical Mom, Teen Girl and Teen Boy. He pulls out a baton and goes clockwork orange on Sterotypical Dad. </Text>
+    </Paragraph>
+    <Paragraph Type="Transition">
+      <Text>CUT TO</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>QWETZ-OID is holding a calming stone attempting to run off with it but can't overcome the calm and he runs in slow motion. He is surrounded by museum guards who kick and beat him. </Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <ScriptNote ID="1">
+        <Paragraph>
+          <Text>Suggested allusion to brotherhood of satan beating scene.</Text>
+        </Paragraph>
+      </ScriptNote>
+    </Paragraph>
+    <Paragraph Type="Scene Heading">
+      <Text>SQUALAZT FARMS EXT. DAY</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>Many Alienesque cows are grazing on a field of mantis-like living plants. The Squalazt are packed tightly behind an eerie and ominous  barbed wire fence. A sign points to Slaughter Grounds. The disheveled NONDESCRIPT HUMAN TOURIST FAMILY looks exhausted. NONDESCRIPT HUMAN DAD is barely recognizable through a swollen face, NONDESCRIPT HUMAN MOM is visibly aged a generation. TEEN BOY is scratching at a visible scar inflicted by the tazer,so much so as to bleed. TEEN GIRL is in tears and is angry at the world.</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>TEEN BOY</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>This is the part in the movie where someone says "at least nothing can go wrong at a nice peaceful Squal---"</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>An undead squalatz, obviously having been through the slaughterhouse, bites on Teen Boy's throat as it threshes about erratically. SLAUGTERHOUSE Aliens (based on texas chainsaw massacre) surround the squallatz and subdue it by butchering it further</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>SLAUGHTERHOUSE ALIEN #1</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>I told you grampa was too old to do this job </Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>SLAUGHTERHOUSE ALIEN #2</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>You respect your elders, you hear!</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>Slaughter House Alien #1 grabs Slaughterhouse Alien #2 by the ear in a fatherly way. He also grabs Leatherface alien by the ear.</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>SLAUGHTERHOUSE ALIEN #1</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>And you! You good for nothing nincompoop, I Told you to bar that door!</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>Leatherface Alien protests muffled and wildly.</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>SLAUGHTERHOUSE ALIEN #1</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>What did you say to me you hornswaggled soul tooth of a soft minded jackalope.</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>LEATHERFACE ALIEN</Text>
+    </Paragraph>
+    <Paragraph Type="Parenthetical">
+      <Text>(pulling off mask)</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>I Said I need a normal mask, these stink!</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>LeatherFace alien grabs the Squallaszt and brandishes it in a way the texas chain saw massacre ended.</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text> NONDESCRIPT HUMAN Mom is holding her son in mourning. NONDESCRIPT HUMAN dad starts yelling invectives at the Slaughterhouse Aliens. NONDESCRIPT HUMAN Teen Girl has a mix of horror and Shaudenfreuda at her brother's misfortune. In the background we see BIO-NET skulking away from the slaughter house grounds.</Text>
+    </Paragraph>
+    <Paragraph Type="Scene Heading">
+      <Text>CAR'OLAN MEMORIAL FAIRGROUNDS INT. DAY</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>NONDESCRIPT HUMAN DAD is stridently leading his family through the fairgrounds at an anxious urgent pace. NONDESCRIPT HUMAN MOM is hovering over TEEN SON with concern. TEEN GIRL dawdles at the sights. Teen Son is a deathly palor, and shambles like a zombie. His scar is now gaping and infected, his throat is in stitches. A nanobot goo emits from his eyes.</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>NONDESCRIPT HUMAN DAD</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>Don't worry son! I promised you the Y'llaw d'rlow Ride and By Glustrop's grace, we are almost there!</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>Teen Boy examines his scar, shoves it in his mouth and chews a big chunk of flesh out, blood and nanbot goo expell from the wound and dribble down his cheeks. NONDESCRIPT HUMAN Mom trys to stop him.</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>NONDESCRIPT HUMAN TEEN GIRL</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>Let him do it mom! At least he's eating.</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>NONDESCRIPT HUMAN MOM</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>Penelope, you are getting on my last nerve.</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>NONDESCRIPT HUMAN TEEN GIRL</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>Fine, I'll just go have fun by myself.</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>Penelope runs off.</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>NONDESCRIPT HUMAN DAD</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>You are in big trouble if you don't come back here! (in a serious concerned tone) She's been so much trouble ever since her fronds started sprouting.</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>NONDESCRIPT HUMAN MOM</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>I'd like to tell you that it's a vulnerable time in a woman's life, but she's a psychopath! She doesn't care at all about what's happened to her brother! What's wrong with her!</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>NONDESCRIPT HUMAN DAD</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>Ah yes, a vulnerable time indeed.</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>Teen Boy rolls his eyes. They approach a closed rollercoaster type ride.</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>NONDESCRIPT HUMAN DAD</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>We are going on that ride or my name isn't</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>A large piece of the ride descends from above and squashes Sterotypical Dad into a bloody pulp. NONDESCRIPT HUMAN Mom stares at her husband, looks at her son, and turns her head to hear</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>NONDESCRIPT HUMAN TEEN GIRL</Text>
+    </Paragraph>
+    <Paragraph Type="Parenthetical">
+      <Text>(offscreen)</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>You skimped on my cotton candy, I ought to pull out your intestines and use them to braid my hair!!!!</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>Another piece of the ride falling off is telagraphed by a shadow forming a tiny way off from Sterotypical Mom. She calmly and deliberetly steps into the shadow and Squished into paste as well.</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>Teen Boy starts licking the exposed alien innards.</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>The camera pans up to reveal LU-CIAN and ARSONBOT 2525. Arsonbot is lighting Lucian's Gaseous expulsions that constantly emenate from a tube in his head. The blasts engulf and weakens parts of the ride. This Causes  pieces to fall below, a fact which elicits laughter and yoddling. They are drinking cans of a bright neon drinks and obviously drunk. </Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>A gang of Warriors type aliens(the Rogues)on hoverskates like in jet set radio future climb around them and start tagging them with spray paint.</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>LUTHER</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>You've got a bounty on your head so I've come to playyyyeeeee.</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>Security drones arrive on the scene and machine gun half the group. Luther is among those shot</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>HEAD SECURITY BOT</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>Thank you citizen! Your tip has led to the location of the sons of an important head of state. Without your service, their diplomatic immunity would surely have led to the demise of Colazt city. 250 terrabytes have been added to your cryptomining capacity. Have a pleaseant day.</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>ARSONBOT 2525</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>Ah c'mon. I was just trying to have some fun. Dad blow's these things out of proportion.</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>LU'CIEN</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>Can I shoot the rest?</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>HEAD SECURITY BOT</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>Well I can't see the harm.</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>ARSONBOT 2525</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>You shot them last time! I don't know why dad favors you, You are obviously the adopted one.</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>LU'CIEN</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>Poor deluded Arsonbot 2525. What has the Squaz Milk done to you? I don't get away with shit.</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>Lu'cien shoots the rest with a machine gun, and then points at ARSONBOT 2525. And he Lets loose a little spray of bullets near his feat.</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>ARSONBOT 2525</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>Quit it!</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>LU'CIEN</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>Quit it! (mockingly)</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>HEAD SECURITY BOT</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>Allright you two, your father's waiting.</Text>
+    </Paragraph>
+    <Paragraph Type="Scene Heading">
+      <Text>COLLAZT CITY JUVENILE DETENTION CENTER INT. DAY</Text>
+    </Paragraph>
+    <Paragraph Type="Scene Heading">
+      <Text>WARDEN'S OFFICE INT. DAY</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>COLAZT AMBASSEDOR HLLLLLLLLGRRRRR is sitting calmly. WARDEN JUDGE WARDEN is behind his desk, flipping through a juvenile's file and INTERIOR MINISTER OF COLLAZT AFFAIRS HAWNK is  wringing her tentacles and pacing with anxiety</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>INTERIOR MINISTER OF COLLAZT AFFAIRS HAWNK </Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>An Entire vacation ruined by the children of Collazt city. This could ruin our tourism industry!</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>COLAZT AMBASSEDOR HLLLLLLLLGRRRRR</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>I know, but what can be done. Boys will be boys! Let's call it finished, eh?</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>WARDEN JUDGE WARDEN</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>Now now. We have the experts coming in, They'll figure it all out for us.</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>The Warden's office door opens and GOLLY GEE GUARD appears in the doorway.</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>GOLLY GEE GUARD</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>The Ineffable Deb is here sir! </Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>WARDEN JUDGE WARDEN</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>Um, you realize we have an entire phone network setup so you don't have to walk down to my office every time don't you?</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>GOLLY GEE GUARD</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>Yes Sir. Um, sorry sir.</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>Golly Gee Guard quickly shuts the door.</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>WARDEN JUDGE WARDEN</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>Well, it's about time you met the latest in bio-ai quantum jingolowatts er ah technology.</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>Warden Judge Warden gets up to leave and begins ushering the officials out the door. The phone rings.</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>WARDEN JUDGE WARDEN</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>What now?</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>COLAZT AMBASSEDOR HLLLLLLLLGRRRRR</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>I hope it's Hildy's kid this time, she's so high and mighty it'd be good to knock her down a peg</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>Warden Judge Warden picks up the phone</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>GOLLY GEE GUARD</Text>
+    </Paragraph>
+    <Paragraph Type="Parenthetical">
+      <Text>(offcamera)</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>Um, the Ineffable Deb is, uh here.</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>Visibly annoyed, Warden Judge Warden hangs up forcefully.</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>COLAZT AMBASSEDOR HLLLLLLLLGRRRRR</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>Was it Hildy's kid?</Text>
+    </Paragraph>
+    <Paragraph Type="Transition">
+      <Text>CUT TO</Text>
+    </Paragraph>
+    <Paragraph Type="Scene Heading">
+      <Text>JUVENILE HOLDING AND RECIEVING INT. DAY</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>All manner of young aliens and biobots are standing in a queue with various expressions of fear and defience. </Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>THE INEFFABLE DEB is standing next to GOLLY GEE GUARD</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>WARDEN GUARD WARDEN approaches Deb with AMBASSADOR HLLLGRRRRR and INTERIOR MINISTER HAWNK follow behind.</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>WARDEN JUDGE WARDEN</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>Ah, here's The Deb. Beautiful aren't they?</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>HAWNK </Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>What's this? This thing is ancient. Where's the biomass? What's your game Warden?</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>WARDEN JUDGE WARDEN</Text>
+    </Paragraph>
+    <Paragraph Type="Parenthetical">
+      <Text>(slapping Deb on it's shell) You have no idea.</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>THE INEFFABLE DEB</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>Our bio-mass is contained in our shell, in addition, our critical decision matrix processing consists of millions of tiny organic sentients.</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>GOLLY GEE GUARD</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>So your brain is filled with little people? Golly Gee.</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>THE INEFFABLE DEB</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>Each of our hemispheres consist of entire self contained civilizations.</Text>
+    </Paragraph>
+    <Paragraph Type="Scene Heading">
+      <Text>LEFT BRAIN CIVILIZATION - INT. DAY</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>A bustling city, active with aliens engaged in rhetorical debates. A group of toga wearing aliens are in deep discussion. A street sweeper passes by and throws her 2 cents in, a fact which disturbs the toga wearers and quickly leave her prsesne</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>THE INEFFABLE DEB (CONT.)</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text> We arrive at the perfect solution to any problem through dialectic processing and ambiguity gates.</Text>
+    </Paragraph>
+    <Paragraph Type="Scene Heading">
+      <Text>RIGHT BRAIN CIVILIZATION INT. DAY</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>A civilization a bit more disheveled and chaotic is bustling with activity. Two Toga'd aliens are deep in philosophical debate. A street cleaner puts her two cents in and is given a hug and invited to join them. The streets are filled with garbage as most of the essential workers are involved in vigorous discussion.</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>THE INEFFABLE DEB (CONT.)</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>Our civilizations are designed to create diametrically opposed values to eek out the widest variety of veiwpoints. This ensures the decision matrix isn't working with an incomplete dataset.</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>COLAZT AMBASSEDOR HLLLLLLLLGRRRRR</Text>
+    </Paragraph>
+    <Paragraph Type="Parenthetical">
+      <Text>(offscreen)</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>A list of answers isn't a solution. How do you know which is right?</Text>
+    </Paragraph>
+    <Paragraph Type="Scene Heading">
+      <Text>INEFFABLE DEB'S PROVING GROUNDS INT. NIGHT</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>A siren is heard and the question "how do you know which is right?" appears in the sky. Armies from each civilization line up and then  battle until only one remains. SURVIVING BATTLE PARTICIPENT pulls out a megaphone and points it to the sky</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>SURVIVING BATTLE PARTICIPENT</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>That is a complex algorythm surely..</Text>
+    </Paragraph>
+    <Paragraph Type="Scene Heading">
+      <Text>JUVENILE HOLDING AND RECIEVING INT. DAY</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>THE INEFFABLE DEB</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>...beyond the capacity for you to comprehend.</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>WARDEN JUDGE WARDEN</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>I'm telling you, they are infallable.</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>COLAZT AMBASSEDOR HLLLLLLLLGRRRRR</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>I don't like mystery box technology. </Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>HAWNK </Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>If it fixes this public relations nightmare, I'd listen to a dead mouse.</Text>
+    </Paragraph>
+    <Paragraph Type="Transition">
+      <Text>DISSOLVE TO:</Text>
+    </Paragraph>
+    <Paragraph Type="Scene Heading">
+      <Text>JUVENILE DENTENTION CELL INT. DAY</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>A confined classroom detention area, reminescent of On Campus Suspension, contains THE REFORMSCHOOL ETS modeled after kids poses in class of 1984 and class of nuke em high. </Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>AMBASSADOR HLLLLGRRRRR is smiling good naturedly at the antics of LU'CIEN, as he puches  ARSONBOT 2525</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>COLAZT AMBASSEDOR HLLLLLLLLGRRRRR</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>You gonna let him get away with that? Puch him back you wuss.</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>LU'CIEN</Text>
+    </Paragraph>
+    <Paragraph Type="Parenthetical">
+      <Text>(looking sheepish)</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>Daaad. Hes nothing but metal and fire.</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>COLAZT AMBASSEDOR HLLLLLLLLGRRRRR</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>Didn't stop you from hitting him, did it? Now puch him Asonbot 2525, cmon punch him in the golatz stomache!</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>ARSONBOT 2525</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>I don't want to hurt..</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>Arsonbot2525 is winded as Lu'Cien punches him in the stomache.</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>LU'CIEN</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>Take that you weak peice of shit</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>COLAZT AMBASSEDOR HLLLLLLLLGRRRRR</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>Ha ha ha. Well at least one of my boys learned the lesson. Take the shot when you can! Ha ha ha.</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>PENELOPE</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>That's some completely fucked up shit you're feeding your kids.</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>LU'CIEN</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>Look who just decided to make herself target practice.</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>COLAZT AMBASSEDOR HLLLLLLLLGRRRRR</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>Now son, remember our discussion about plausible deniability.(agressively) Shes off limits! Now, and...forever.</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>PENELOPE</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>Let him lose, I'm not taking anyone's crap anymore!</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>ARSONBOT 2525</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>(concerned)I don't think you know what you're asking for. </Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>Lu'Cien stares contemptuously at penelope, sticking his tougues out at her vulgarly.</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>Penelope attempts one back but is not very succsessful, it ends up more sensual than agressive.</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>Lu'Cien looks confused, and his face twists into sadistic contempt mixed with  lust.</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>Penelope's face instantly turns to horrified disgust and then Anger.</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>PENELOPE</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>I said I'm NOT TAKING ANYONES CRAP ANYMORRRRRRE!</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>The entire room stops bustling with activity and all faces stare at Penelope.</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>PENELOPE</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>Don't you dare</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>YAWG WU</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>Ha, She's on her Perio..</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>Penelope lunges at Yawg Wu's throat and squeezes with a stregth not betrayed by her slender tentacle arms</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>Golly Gee Guard, Warden Judge Warden, and Interior Minister Hawnk pull her off and return the room to order.</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>INTERIOR MINISTER HAWNK</Text>
+    </Paragraph>
+    <Paragraph Type="Parenthetical">
+      <Text>(whispered to Ambassador Hllllllgrrrrr)</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>I don't feel bad about sending her with this crew anymore.</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>COLAZT AMBASSEDOR HLLLLLLLLGRRRRR</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>Crazy fucking broad, what do you expect, they're all crazy.</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>WARDEN JUDGE WARDEN</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>Allright you chuckle heads and fallopinooks Life Is about to change drastically for you. You're the lowest of the low, the truest scum I've ever met and If I was given my druthers you'd all be sunk in a cell 50 feet deep into the garbage flow. You've cost Colazt city more in destruction and potential tourism revenue, It would take you 50 millenia in the cryptomines just to cover the interest. But Interior Minister Of Colazt Affairs Hawk and Ambassador Hrrrgrrrrrr here have softened my heart, so instead, you are all getting a free camping vacation. I mean really Ineffable Deb, seriosly. Ok. Ok . The Ineffable Deb has graciously Offered to be your camp warden.</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>The camera pans around the room and focuses on each reform school et as the warden speaks</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>WARDEN JUDGE WARDEN (CONT'D)</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>You will be sent to a remote planet inhabitted with no sentient life in the deepestest recessess of known space. There you will have to depend on each other to survive, you'll face the ravages of an unforgiving environment and you will emerge as a cohesive unit, ready to kill for each other, almost certainly dead set on revenge angainst the people you feel unjustly sent you there. Only then, Only then will you  </Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>GOLLY GEE GUARD</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>Why are the tourist victim's kid's here sir.</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>WARDEN JUDGE WARDEN</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>We need to keep them quiet, you know, just long enough until I retire. If you keep quiet, you may very well retire one day too.</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>GOLLY GEE GUARD</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>Well that makes sense, but why is that kid here?</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>Cut to Med-I-Kate looking into a compact with a sad dejected look on her face. </Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>WARDEN JUDGE WARDEN</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>Because he pushes everyone on my buttons the wrong way, do you know he actually thinks he's a girl? This camp will straighten him out.</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>GOLLY GEE GUARD</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>She looks like a girl to me.</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>WARDEN JUDGE WARDEN</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>Do you want to join them?</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>GOLLY GEE GUARD</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>Oh golly gee no. Sorry sir.</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>The camera pulls out slowly as the children protest wildly. The Camera pulls out a window out of Collazt City and smears to</Text>
+    </Paragraph>
+    <Paragraph Type="Scene Heading">
+      <Text>SECURITY SCHOOL BUS SHIP - EXT DAY</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>A JEEPER's CREEPERs, dressed in a cheerleader's outfit jumps onto the bus and it  starts to rip a  hole through the roof</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>JEEPERS CREEPERS</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>That dress looks my size! I must possess it!</Text>
+    </Paragraph>
+    <Paragraph Type="Scene Heading">
+      <Text>SECURITY SCHOOL BUS SHIP - INT. DAY</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>The Jeeper Creepers is clawing through the open roof at PENELOPE. MEDI-KATE is sitting in the back gazing at a mirror</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>Penelope pulls back and almost trips forward from LU'CIEN's manspread legs.</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>Penelope Gets angry, grabs the jeepers creeper's caught off guard hands, and throws her toward the safety exit in the back being sure to hit LU'CIEN's legs in the process.   </Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>PENELOPE</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text> Medi-kate!</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>Medi-kate looks up, calmly opens the back exit, and she resumes looking into her mirror</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>MEDI-KATE</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>I'm a victim of my own male gaze.</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>Jeepers Creepers strugles to hold on to the bus like in Alien. </Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>Medi-Kate calmly closes the exit</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>MEDI-KATE</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>Ok. Bye, love you or whatever.But you know penelope, she's right about that dress. Smokin.</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>PENELOPE</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>awe, Thank you! I love your necklace</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>Penelope and Medi-kate sit down next to each other and start talking. </Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>THE INEFFABLE DEB</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>I Would ask each of you to reflect on the impact your actions as a series of infinite fractures in the sheet of one quantum chronal thread.try to imply vectored movement with frictionless velocity in multiphasal-dimensional space.explore velocity without time and be sure to log your work.</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>The camera pulls out slowly as The Deb blathers on about lorenz patterns, fibonacci series and ecto plasmic resonant hallucinators.</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>THE CAMERA ZOOMS out to reveal the jeepers creepers hanging on desperately to a neon sign debri stuck to the bus with other space junk. The  words read "the end?" with a question mark that flashes in a timing that  suggests classic sequal baiting in movies, like contamination </Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <ScriptNote ID="1">
+        <Paragraph>
+          <Text>I want a goblin soundtrack here. Conexxion.</Text>
+        </Paragraph>
+      </ScriptNote>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text> The camera zooms out further and smears to</Text>
+    </Paragraph>
+    <Paragraph Type="Scene Heading">
+      <Text>EARTH BASE CAMP. EXT DAY.</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>The INEFFABLE DEB is instructing the kids in the art of making a pyramid base camp. The terrain is Jurrasic Jungle Like. Unknown dinosaur species variously enter and exit the scene frolicing and dining on each other.</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>QUEZT-OID is grabbing every plant he can, tasting it for its effects. KLE'O and Yahg Wa are following closely, yahg Wa is happily carrying three huge stones.</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>K'LEO</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>Any luck yet Quetz? I'm feeling a bit dulled.</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>QUEZT-OID</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>This stuff is so primative. I'm working with nothing but rhizomes and sporangia.</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>K'LEO</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>Keep trying, huh?</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text> The Ineffable Deb indicates K'leo, Quezt-oid and Yahg Wa</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>THE INEFFABLE DEB</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>Watch children. A perfect triad of team work, each fulfilling a role the other lacks. Yah Wa provides copius strength to lift each member's stone carrying quota, Quezt-oid is using their experience with narcotics to identify medicine for the group.</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>LU'CIEN</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>(offscreen)</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>What the blatz is ballbuster here doing?</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>K'LEO</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>I am keeping my murderous pyschopathic urges at bay, fuckwit.(she looks hurt) It's a real problem for me.</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>LU'CIEN is sitting on a stone that is being pulled by  ARSONBOT 2525, occasionally kicking him in the head.</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>THE IEFFABLE DEB</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>Where is your other stone Lu'cien?</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>LU'CIEN</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>This is my stone, Arsonbot's going back for his.</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>ARSONBOT 2525 looks angry for a moment, kicks the stone and sighs dejectedly and turns back to get his stone</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>   PENELOPE and her brother are struggling with stones larger than average, while MEDI-KATE appears to carry none.</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>MEDI-KATE</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>What's your brother's name any way?</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>She looks at her brother reflectively as drool dribbles down his mouth and nano bot goo bleeds from his eyes</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>PENELOPE</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>He's not my brother anymore. Just call him Doofus.</Text>
+    </Paragraph>
+    <Paragraph Type="Transition">
+      <Text>DISSOLVE TO:</Text>
+    </Paragraph>
+    <Paragraph Type="Scene Heading">
+      <Text>EARTH BASE CAMP. EXT NIGHT.</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>THE CHILDREN are surrounding a fire, tired and scheming exits.  The Ineffable Deb begins to stumble.</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>PENELOPE</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>Are you allright miss deb?</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>THE INEFFABLE DEB</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>We prevail, Death to the fasciauthoritarian AI Hive. Long live freedom! Whooo! First stop Gamblopolis. No! On other thought we should take care of these creatures in my charge. Gun holder says nah. I'm serious, somone is literally holding a gun to my head as we speak.  Ok. Later kids. This is why they call it survival wilderness camp. Good luck!</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>The Ieffeable Deb is running around as if on coke, because there is no seperation between thought, deliberation and action. It Stumbles into the space ship as the kids try to chase behind, but they are too late and the ship flys erratically into space, narrowly missing an allosaurous in it's path. </Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>K'LEO</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>I knew it! You can't ever trust a machine! First there was the robohog shooting. Then the borderbot uprising on fasci-fetish prime.</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>QUEZT-OID</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>I'm not really into this line of reasoning K'leo. It feels destined to fall down a dark hole. You're forgetting that robohog was the first bio-robot synthetic, it was more a failure on the biological end if you ask me.</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>K'LEO</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>Are you saying robots are superior?</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>QUEZT-OID</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>Dude, no. This is a complicated topic to talk about in a nuanced way with so many emotions and so much history wrapped up in it. I'm just asking you approach from a starting stance of acceptance.</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>YAWG WU</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>So do I need to get more stones... Or. I'm just going to go get some more stones.</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>PENELOPE</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>So what? are we just fucked? Why are you two so calm.</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>LU'CIEN</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>Arsonbot 2525, someone finally called you calm.</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>Arsonbot 2525 is pacing back and forth nervously</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>PENELOPE</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>Ok. We'll your both still acting pretty suspicious to me.</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>LU'CIEN</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>Is baby Karen going to tell on me? Who you going to tell? your freak friend over there? Oh wait don't tell your zombie fuck brother, I mean he's a man, he might be able to do something.  Go fall into a pit of despair.</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>PENELOPE</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>If you think I'm going to you  get away with attacking the only family I've got right now...</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>Doofus makes a loud crunching sound, he starts devouring his arm, which he has managed to chew completely detached from his body. His head is back as if sword swallowing. He continues to suck and dribble on his arm, head tilted back, until Medi-kate can wrangle it out of his throat. She flys back into a stegosaurus, knocks her head into its shell like scales and passes out, penelope checks on kate, pulls the arm out of kates hand</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>PENELOPE</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>Yeah, go ahead, knock yourself out.</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text> She shoves the arm  back into Doofus's mouth</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>PENELOPE</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>AT LEAST he's eating. (through gritted teeth)</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>K'LEO</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>Damn bitch. You are the craziest of the lot of us. We should do brunch.</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>QUEZT-OID</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>I'd really like to get back to my experiments...</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>K'LEO</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>Yeah im over it. Bye bababa bye bye.</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>K'leo, and Qwetz-oid head back toward the quarry.</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>PENELOPE</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>I've got to believe things will get better.</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>LU'CIEN</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>Golatz is a sadistic child who only cares how much pain you can spread throughout universe.</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>PENELOPE</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>I'm familiar with the teachings, quit trying to convert me. Everyone seems to think I've never heard the word of Golazt. But let me tell you something, The mythical creature called this person who has "never heard of Golazt" does not exist. I have heard nothing but Golazt this and Golazt that since I was old enough to process sound!</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>Med-I-kate stirs from her concussion.</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>MED-I-KATE</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>Whoa, Someone was triggered. </Text>
+    </Paragraph>
+    <Paragraph Type="Transition">
+      <Text>DISSOLVE TO:</Text>
+    </Paragraph>
+    <Paragraph Type="Scene Heading">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Scene Heading">
+      <Text>SECRET MEETING PLACE EXT. NIGHT</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>LU'CIEN is leaning against a herculoids type triceretops and ARSONBOT 2525 is pacing nervously back and forth occasionally setting foilage on fire.</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>ARSONBOT 2525</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>When will he get here?</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>LU'CIEN</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>Chill, I set the beacon only half a chronon ago.</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>ARSONBOT 2525</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>Yeah, but what if he leaves us here. Its unbearably booring. Sure there's lots of stuff to set on fire.</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>Arsonbot sets a tree on fire and causes a swarm of pteradactlys to fly in a panicked frenzy. </Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>ARSONBOT 2525</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>But where's the chaos?</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>LU'CIEN</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>You're not looking hard enough, we can torture those other rejects for a good while before it gets booring.</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>Ambassador Hllllgrrrrr's ship appears and lands in a clearing, Lu'ien and Arsonbot run up to the ship and the door opens to reveal AMBASSADOR HLLLLGRRRR</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>AMBASSADOR HLLLGRRRRR</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>Well boys, did you have a good time? Got your fill?</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>ARSONBOT 2525</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>I'm ready to blow this popsicle stand.</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>Arsonbot holds himself for warmth and shakes with chills as a volcano errupts in the distance.</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>LU'CIEN</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>I took care of the Inneffable Deb, just like you asked me to.   </Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>AMBASSADOR HLLLLGRRRRR</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>Great work son! I'm proud of you. you really are growing so much! </Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>Ambassador Hllllgrrr is patting his son on the back as he surveys his surroundings.</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>AMBASSADOR HLLLLGRRRR</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>So where is it?</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>LU'CIEN</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>Where is what dad?</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>AMBASSADOR HLLLLGRRRRR</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>Where's your mother's smelly ass? what do yopu think I mean, the deb,I thaught you said  you took care of it. So where is it?</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>ARSONBOT 2525</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>I didn't touch it dad</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>AMBASSADOR HLLLLGRRRRR</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>This isn't time to kiss up, arsonbot 2525, stay out of it. Now LU'CIEN, if you tell me you don't know where The Deb is, we are going to have a problem.</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>Ambassador Hlllllgrrrr is punching and slapping  his kid in the face.</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>LU'CIEN</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>I don't understand. You said take him out! I took him out out!(crying in pain)</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>AMBASSADOR HLLLLGRRRRR</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>Then WHERE IS IT! That machine's got millions of tiny witnesses we have to wipe out it's brain!</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>ARSONBOT 2525</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>It said something about Gambopolis.</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>AMBASSADOR HLLLLGRRRRR</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>You mean to tell me that thing is roaming off PLANET. You said you took care of it! Oh you fucking idiot. Why did you lie to me son? Don't you know by now I'm going to beat you either way.</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>LU'CIEN</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>But I did take care of it. I gave one of the civilizations a laser pistol.</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>AMBASSADOR HLLLLGRRRRR</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>I didn't ask you for creativity, I asked you for results</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>Ambassador Hlllllgrrrrrr kicks Lu'cien to the ground and Lu'cien spits up blood. </Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>AMBASSADOR HLLLLGRRRRR</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>Don't touch anyone until I say so, get it? Maybe I can salvage this, but it looks like its not gonna be the weekend retreat you thought it would be. Sorry kids, its out of my hands now. Hope you like earth cuisine. Heh.</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>Ambassador Hllllgrrrr Slams his spaceship door and flys away.</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>ARSONBOT 2525</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>I don't think he's coming back for a while.</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>LU'CIEN</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>I hope he never comes back!</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>Ambassador Hllllgrrrr's ship lands back at the site</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>AMBASSADOR HLLLLGRRRRR</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>And make sure that Penelope kid stays alive, or I'll be forced to bury you and play victem with the other parents. Tears strain my eyes, got it!</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>Ambassador Hlllgrrr's ship flys off again in a rush.</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>LU'CIEN</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>Well that's going to spoil my fun. Wait, aren't their intelligent species allready here, that LizardMan gave us a 50 minute dissertation about how glorious the smokey abyss is. Its a 15 foot pool filled with dry ice for golsac's sake.</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>ARSONBOT 2525</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>It's unfortunate The only quote unquote sentient species on this planet are obsessed with smoke and dry ice.</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text> LU'CIEN</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>Zealots are boring cause they seem to enjoy the torture. I mean it would be different if they were obssessed with me.</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>ARSONBOT 2525</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>We could make our own toys, help one of these more tolerable creatures out on the sentience scale a bit.</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>LU'CIEN</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text></Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text> These big animals are a bit much, though,  don't you think?</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>ARSONBOT 2525</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>Oh, that one's cute.</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>A tritylontid scurries about. Lu'Cien picks one up and it nuzzles his face. He is suprisingly gentle with the creature. </Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>LU'CIEN</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>You're right, this is about as meeke a base as you're about to find. They'll evolve to be highly persuadeable.</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>ARSONBOT 2525</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>If we get them smart enough...</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>LU'CIEN</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>They'll build us a way out of here and we won't have to lift a finger. You Know,  Arsonbot 2525. Maybe sometimes you aren't so dumb. Yeah, you're safe, for now. Just don't cross me.</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>ARSONBOT 2525</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>Do you have to give me that same speech every week?</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>LU'CIEN</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>Just giving you a progress report.</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>Lu'cien then punches arsonbot 2525 in the stomache.</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>Camera reveals Penelope witnessing the scene from behind two giant ferns</Text>
+    </Paragraph>
+    <Paragraph Type="Character">
+      <Text>PENELOPE</Text>
+    </Paragraph>
+    <Paragraph Type="Dialogue">
+      <Text>We are fuc...</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <ScriptNote ID="1">
+        <Paragraph>
+          <Text>Cue vacation type theme and credits</Text>
+        </Paragraph>
+      </ScriptNote>
+    </Paragraph>
+    <Paragraph Type="Transition">
+      <Text>FADE TO BLACK</Text>
+    </Paragraph>
+    <Paragraph Type="Scene Heading">
+      <Text></Text>
+    </Paragraph>
+  </Content>
+  <ElementSettings Type="New Act">
+    <FontSpec Style="Underline+AllCaps"/>
+    <ParagraphSpec Alignment="Center"/>
+  </ElementSettings>
+</FinalDraft>
