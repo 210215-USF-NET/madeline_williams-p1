@@ -31,25 +31,18 @@ The objective of this application is to create a space for Collectors, Gallery O
 - your browser should show something like this.
 ![image](https://user-images.githubusercontent.com/76539571/114322698-79148980-9ad6-11eb-8df6-1e42aa8baf49.png)
 
-### Script Parser
-- [x] When uploaded, scripts are parsed by the browser
-- [x] Scenes are created automatically based on the parsed script
-- [x] Scene elements are created automatically based on the parsed script
-- [x] Scene elements are applied to the correct scene(s) automatically based on the parsed script
-- [x] Scenes and characters can be manually added without needing to appear in the script
-### Non-functional requirements
-- [x] The system features must be tested thoroughly
-- [x] The system should use a secure third-party service to manage authentication
-- [x] The system should be easy to use
-- [x] The system should have a responsive user interface
-- [x] The system should be easy to maintain and extend
-## Development Team
-- Project Lead: [Joaquin](https://github.com/j0livar)
-- Development Lead: [Mads](https://github.com/MadCynWil)
-- Backend
-    - Database scaffolding: [Angeleen](https://github.com/AngeleenAbesamis)
-    - Database administration: [Angeleen](https://github.com/AngeleenAbesamis) & [Alan](https://github.com/libbya)
-    - Server: [Angeleen](https://github.com/AngeleenAbesamis) & [Alan](https://github.com/libbya)
-- Frontend: [Mads](https://github.com/MadCynWil) & [Joaquin](https://github.com/j0livar)
-- API Management: [Joaquin](https://github.com/j0livar)
-- Devops: [Alan](https://github.com/libbya)
+### Usage
+- create an account as a seller
+- login as an artist
+- upload some art
+- attach art to a seller
+- login as a seller
+- select art you wish to create an auction for
+- create an auction and be sure to set the closing date in the future
+- login as a collector
+- view auctions and select one to bid on
+- bid on auction 
+### Conributer
+- Madeline Cynthia Williams
+## License
+-no license
