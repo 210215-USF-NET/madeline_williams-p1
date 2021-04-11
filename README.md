@@ -25,13 +25,12 @@ The objective of this application is to create a space for Collectors, Gallery O
 - Secure login and monetary transactions
 - Limited Series art print NFTs
 ### Site
-- (include git clone command) (include all environment setup steps)
+- gh repo clone 210215-USF-NET/madeline_williams-p1
+- Modify your appSettings to point to a postGreSql
+- Run the app in visual studio
+- your browser should show something like this.
+![image](https://user-images.githubusercontent.com/76539571/114322698-79148980-9ad6-11eb-8df6-1e42aa8baf49.png)
 
-Be sure to include BOTH Windows and Unix command
-Be sure to mention if the commands only work on a specific platform (eg. AWS, GCP)
-
-All the code required to get started
-Images of what it should look like
 ### Script Parser
 - [x] When uploaded, scripts are parsed by the browser
 - [x] Scenes are created automatically based on the parsed script
